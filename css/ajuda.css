@@ -10,7 +10,8 @@
     --text-color: white;
     --main-color: #8767E0;
     --primary-color: #311878;
-    --second-color: rgba(135, 103, 224, 0.65);
+    --second-color: hsla(256, 66%, 64%, 0.65);
+    --third-color: hsl(256, 67%, 28%, 0.65);
     --font-h4: 22px;
 }
 
@@ -192,8 +193,8 @@ header{
     border-radius: 20px;
     width: 900px;
     height: 200px;
-    margin-left: 350px;
-    margin-top: 350px;
+    margin-left: 330px;
+    margin-top: 270px;
 }
 
 .divBusca{
@@ -248,4 +249,32 @@ header{
     margin-bottom: 25px;
     margin-left: 20px;
     cursor: pointer;
+}
+
+.sugestao p, li{
+    color: var(--third-color);
+}
+
+.sugestao{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+.sugestao p{
+    text-align: left;
+}
+
+.t1{
+    margin-right: 140px;
+}
+
+.sugestao ul{
+    margin-left: 250px;
+}
+
+.sugestao h2{
+    margin-left: 180px;
 }
