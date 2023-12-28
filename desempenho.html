@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/desempenho.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Portal | Docente</title>
+</head>
+<body>
+    <header>
+        <div id="header">
+            <div class="title">
+                <i class="fa-solid fa-bars"></i>
+                <h2>Teacher's AI Support</h2>
+            </div>
+
+            <div class="log">
+                <p><i class="fa-solid fa-user"></i> Login</p>
+            </div>
+        </div>
+    </header>
+    
+    <section class="central">
+
+        <div class="barra-lateral">
+                <ul class="navbar">
+                
+                <li>
+                    <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+                </li>
+                <hr>
+                <li> 
+                    <a href="favoritos.html"> <i class="fa-solid fa-bookmark"></i> Favoritos</a>
+                </li>
+                <hr>
+                <li>
+                    <a href="calendario.html"><i class="fa-solid fa-calendar-days"></i> Calendário</a>
+                </li>
+                <hr>
+                <li>
+                    <a href="tarefas.html"><i class="fa-solid fa-clipboard-list"></i> Tarefas</a>
+                </li>
+                <hr>
+                <li>
+                    <a href="acessibilidade.html"><i class="fa-solid fa-universal-access"></i> Acessibilidade</a>
+                </li>
+                <hr>
+                <li>
+                    <a href="desempenho.html"><i class="fa-solid fa-chart-simple"></i> Desempenho</a>
+                </li>
+                <hr>
+                <li>
+                    <a href="#configuracoes"><i class="fa-solid fa-gear"></i> Configurações</a>
+                </li>
+                <hr>
+                <li class="ajuda">
+                    <a href="#ajuda"><i class="fa-solid fa-circle-info"></i> Precisa de ajuda?</a>
+                </li>
+                </ul>
+                
+        </div>
+        
+    </section>
+    
+    <section class="form">
+        <div class="container-form">
+            <form action="#" method="post" id="taskForm1">
+                <input type="text" name="taskName" id="taskName" placeholder="Formulário sem titulo" required>
+                <textarea name="taskDescription" id="taskDescription" rows="4" placeholder="Adicionar descrição"></textarea>
+            </form>
+        </div>
+        
+        <div class="container-form">
+            <form action="#" method="post" id="taskForm2">
+                <input type="text" name="taskQuestion" id="taskQuestion" placeholder="Pergunta 1" required>
+        
+                <div class="opcoesContainer" id="opcoesContainer">
+    
+                    <div class="opcaoContainer">
+                        <input type="radio" id="opcao1" name="resposta1" value="opcao1">
+                        <input type="text" id="opcao1Input" value="Opção1">
+                    </div>
+            
+                    <div class="opcaoContainer">
+                        <input type="radio" id="opcao2" name="resposta1" value="opcao2">
+                        <input type="text" id="opcao2Input" value="Opção2">
+                    </div>
+            
+                    <div class="opcaoContainer">
+                        <input type="radio" id="opcao3" name="resposta1" value="opcao3">
+                        <input type="text" id="opcao3Input" value="Opção3">
+                    </div>
+    
+                </div>
+    
+                <div class="back">
+                    <div class="front" id="adicionarDivOPC">
+                        <i class="fa-solid fa-minus" onclick="removerOPC()"></i>
+                        <i class="fa-solid fa-plus" id="plus" onclick="adicionarDivOPC()"></i>
+                    </div>
+                </div>
+        
+                <div class="back">
+                    <div class="front" id="addDivButton">
+                        <i class="fa-solid fa-minus" onclick="removerDiv()"></i>
+                        <i class="fa-solid fa-plus" id="plus" onclick="adicionarDiv()"></i>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+
+    <div class="barra">
+        <div class="barra-direita">
+            <h2>CONFIGURAÇÔES</h2>
+            <label class="toggle-container">
+                <input type="checkbox" class="toggle-checkbox">
+                <span class="toggle-slider"></span>
+                <div class="name">
+                    <h1 style="font-size: 15px;">Mostrar barra de progresso</h1>
+                </div>
+            </label>
+            <label class="toggle-container">
+                <input type="checkbox" class="toggle-checkbox">
+                <span class="toggle-slider"></span>
+                <div class="name">
+                    <h1 style="font-size: 16px;">Embaralhar as perguntas</h1>
+                </div>
+            </label>
+            
+            <label class="toggle-container">
+                <input type="checkbox" class="toggle-checkbox">
+                <span class="toggle-slider"></span>
+                <div class="name">
+                    <h1 style="font-size: 16px;">Perguntas obrigatórias</h1>
+                </div>
+            </label>
+
+            <h1 style="padding-top: 15px;font-size: 13px;margin-left: 10px; padding-left: 5px;">Escolha a turma que deseja enviar esse formulario:</h1>
+
+
+            <h1 style="margin-right: 80px; margin-top: 5px;">Lista de Turmas</h1>
+            <div id="listaTurmas">
+            </div>
+
+            <div class="container-information">
+                <div class="text-information">
+                    <i class="fa-solid fa-circle-info" style="display: flex;"> <p>Salvamento automático</p></i>
+                </div>
+                <div class="text-information">
+                    <i class="fa-solid fa-circle-info" style="display: flex;"><p>Entrega única para cada aluno</p></i>
+                </div>
+                <div class="text-information">
+                    <i class="fa-solid fa-circle-info" style="display: flex;"><p>Após o envio das respostas, as mesmas não poderão serem alteradas</p></i>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="./js/desempenho.js"></script>
+</body>
+</html>

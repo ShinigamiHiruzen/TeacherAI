@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+
+:root{
+    --bg-color: #F8F6F6;
+    --text-color: white;
+    --main-color: #8767E0;
+    --primary-color: #311878;
+    --second-color: rgba(135, 103, 224, 0.65);
+    --font-h4: 22px;
+}
+
+body{
+    background: var(--bg-color);
+    height: 100vh;
+}
+
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    background: var(--second-color);
+}
+
+#header i, p {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    
+}
+
+.title{
+    display: flex;
+    margin-left: -100px;
+    gap: 25px;
+    color: white;
+}
+
+.log{
+    color: white;
+    cursor: pointer;
+}
+
+#header{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+section{
+    max-width: 1110px;
+    padding-top: 50px;
+}
+
+.barra-lateral{
+    padding-top: 10px;
+    width: 224px;
+    height: 895px;
+    position: fixed;
+    background: var(--second-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.navbar li{
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+a:hover{
+    color: #311878;
+}
+
+.navbar li a{
+    height: 100vh;
+    width: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.ajuda{
+    position: fixed;
+    bottom: 0;
+}
+
+#logimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-left: 50px;
+    margin-left: 150px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+
+.content h2{
+    margin-left: 240px;
+}
+
+.turmas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.front h3, .front1 h3{
+    text-align: center;
+}
+
+.front h4, .front1 h4{
+    margin-top: 25px;
+    margin-left: 5px;
+    text-align: justify;
+    font-size: var(--font-h4);
+}
+
+
+
+.back, .back1{
+    background: #8767E0;
+    border: #8767E0;
+    padding-left: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    margin-right: 40px;
+    margin-top: 40px;
+    height: 200px;
+    width: 200px;
+}
+
+.front, .front1{
+    position: relative;
+    background: #311878;
+    border-radius: 20px;
+    color: var(--text-color);
+    position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+}
+
+.front i, .front1 i{
+    display: flex;
+    justify-content: center;
+    padding-top: 65px;
+    font-size: 70px;
+    cursor: pointer;
+  }
+
+  .turmas-title{
+    color: var(--primary-color);
+    margin-left: 300px;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.search-box{
+    padding-left: 400px;
+    margin-top: 30px;
+}
+
+.divBusca {
+    display: flex;
+    width: 700px;
+    border-radius: 25px;
+    gap: 20px;
+}
+.txtBusca{
+    width: 550px;
+}
+
+.divBusca input {
+    border: 1px solid black;
+    outline: none;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 18px;
+}
+
+.borda{
+    border: 1px solid white;
+}
+
+.magnifying{
+    background: var(--main-color);
+    width: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#magnifying{
+    margin-top: 15px;
+    margin-left: 15px;
+    color: white;
+}
+
+#magnifying:hover{
+    color: var(--primary-color);
+}
