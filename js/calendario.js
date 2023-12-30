@@ -42,7 +42,9 @@ const renderCalendar = () => {
     "Dezembro",
   ];
 
-  document.querySelector(".date h1").innerHTML = months[date.getMonth()];
+  const year = date.getFullYear();
+
+  document.querySelector(".date h1").innerHTML = `${months[date.getMonth()]} ${year}`;
 
   document.querySelector(".date p").innerHTML = new Date().toDateString();
 

@@ -1,116 +1,13 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Roboto Mono', monospace;
-}
-
-:root{
-    --bg-color: #F8F6F6;
-    --text-color: white;
-    --main-color: #8767E0;
-    --primary-color: #311878;
-    --second-color: rgba(135, 103, 224, 0.65);
-    --font-h4: 22px;
-}
-
-section{
-    max-width: 1110px;
-    padding-top: 65px;
-}
-
-.barra-lateral{
-    padding-top: 10px;
-    width: 224px;
-    height: 895px;
-    position: fixed;
-    background: var(--second-color);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-}
-
-.navbar li{
-    list-style: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: inline-block;
-    padding-left: 10px;
-}
-
-a{
-    text-decoration: none;
-    color: var(--text-color);
-}
-
-a:hover{
-    color: #311878;
-}
-
-.navbar li a{
-    height: 100vh;
-    width: 100vh;
-    align-items: center;
-    justify-content: center;
-}
-
-.ajuda{
-    position: fixed;
-    bottom: 0;
-}
-
-body{
-    background: var(--bg-color);
-    height: 100vh;
-}
-
-header{
-    position: fixed;
-    width: 100%;
-    top: 0;
-    right: 0;
-    z-index: 10;
-    background: var(--second-color);
-}
-
-#header i, p {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    align-items: center;   
-}
-
-.title{
-    display: flex;
-    margin-left: -100px;
-    gap: 25px;
-    color: white;
-}
-
-.log{
-    color: white;
-    cursor: pointer;
-}
-
-#header{
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-#logimg{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-}
+@import './header.css';
+@import './sidebard.css';
 
 .content{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 50px;
+    margin-right: 200px;
 }
 
 .buttons{
@@ -196,56 +93,3 @@ header{
     margin-top: 350px;
 }
 
-.divBusca{
-    display: flex;
-}
-
-.divBusca input{
-    border: 1px solid black;
-    outline: none;
-    border-radius: 15px;
-    font-size: 18px;
-    padding: 10px;
-    width: 500px;
-}
-
-#magnifying{
-    margin-left: -50px;
-    margin-top: 15px;
-}
-
-.button-call{
-    border-radius: 50px;
-    height: 40px;
-    width: 40px;
-    background-color: #957fcf;
-    margin-left: 40px;
-    border: 1px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 15px;
-    cursor: pointer;
-}
-
-.button-call i{
-    color: #311878;
-
-}
-
-.chatbot input{
-    border: 1px solid black;
-    outline: none;
-    border-radius: 15px;
-    font-size: 10px;
-    padding: 10px;
-    width: 700px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-}
-
-.arrow{
-    margin-bottom: 25px;
-    margin-left: 20px;
-    cursor: pointer;
-}
