@@ -43,6 +43,10 @@ header{
     color: white;
 }
 
+.tittle h2{
+    margin-left: 40px;
+}
+
 .log{
     color: white;
     cursor: pointer;

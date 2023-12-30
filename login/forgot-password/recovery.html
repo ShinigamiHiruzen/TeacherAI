@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal | Docente</title>
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="shortcut icon" href="../images/ia20000-removebg-preview.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Recuperação</h2>
+        <form class="login-form" action="#" method="post" id="formulario">
+            <div class="form-group">
+                <label for="username">Digite o seu email:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <button type="button" onclick="enviarMensagem()">Enviar</button>
+            </div>
+        </form>
+        <div id="mensagem"></div>
+        <a href="../login.html"><button id="voltarBtn" style="display: none;">Voltar</button></a>
+    </div>
+
+    <script src="../js/recovery.js"></script>
+</body>
+</html>

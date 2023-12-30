@@ -1,13 +1,12 @@
-<?php 
+<?php
+$host = "localhost";
+$username = "root";
+$password = "";
+$database = "teachersai";
 
-    $host = "localhost";
-    $user = "root";
-    $password = "";
-    $dbname = "teachersia";
 
-    try{
-        $conn = new PDO("mysql:host={host}; dbname={$dbname}", $user, $password);
-    }catch(PDOException $error){
-        echo "Servidor instável no momento, tente novamente mais tarde!" . $error;
-    }
-?>
+    $connect = new mysqli($host, $username, $password, $database);
+    // Resto do código de conexão...
+ if ($connect->error) {
+    die("Erro de conexão: " . $connect->error);
+}
