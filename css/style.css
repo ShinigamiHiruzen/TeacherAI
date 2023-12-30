@@ -10,7 +10,7 @@
     --text-color: white;
     --main-color: #8767E0;
     --primary-color: #311878;
-    --second-color: rgba(135, 103, 224, 0.65);
+    --second-color: rgba(135, 103, 224);
     --font-h4: 22px;
 }
 
@@ -224,4 +224,62 @@ a:hover{
 
 #magnifying:hover{
     color: var(--primary-color);
+}
+
+@media only screen and (max-width: 600px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        margin-left: 0;
+    }
+
+    .content h2 {
+        margin-left: 0;
+    }
+
+    .turmas-title {
+        margin-left: 0;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .search-box {
+        padding-left: 20px;
+        margin-top: 20px;
+    }
+
+    .divBusca {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .divBusca input {
+        width: 100%;
+    }
+
+    .barra-lateral {
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .navbar li {
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .front i,
+    .front1 i {
+        padding-top: 20px;
+        font-size: 40px;
+    }
+
+    .front h4,
+    .front1 h4 {
+        margin-top: 15px;
+        font-size: 16px;
+    }
 }

@@ -46,8 +46,6 @@ const renderCalendar = () => {
 
   document.querySelector(".date h1").innerHTML = `${months[date.getMonth()]} ${year}`;
 
-  document.querySelector(".date p").innerHTML = new Date().toDateString();
-
   let days = "";
 
   for (let x = firstDayIndex; x > 0; x--) {

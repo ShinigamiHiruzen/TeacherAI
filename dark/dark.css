@@ -1,0 +1,10 @@
+body {
+    background-color: #fff; /* Cor de fundo padrão */
+    color: #000; /* Cor do texto padrão */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave */
+}
+
+.dark-mode {
+    background-color: #000; /* Cor de fundo no modo escuro */
+    color: #fff; /* Cor do texto no modo escuro */
+}
