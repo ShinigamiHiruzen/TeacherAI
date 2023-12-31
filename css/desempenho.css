@@ -158,7 +158,7 @@ margin-left: 200px;
 }
 
 .form h5{
-  color: white;
+  color: #311878;
 }
 
 .forms h2{
@@ -167,7 +167,23 @@ margin-left: 200px;
   color: #311878;
 }
 
+.form:hover .text h5{
+  color: #F8F6F6;
+}
+
 .form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  border: 2px solid #8767E0;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #F8F6F6;
+  cursor: pointer;
+}
+
+.form:hover{
   display: flex;
   align-items: center;
   justify-content: center;

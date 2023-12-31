@@ -92,31 +92,29 @@
     margin-left: 220px;
     margin-top: 270px;
 }
-
-.sugestao p, li{
-    color: var(--third-color);
-}
-
 .sugestao{
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-left: 100px;
     margin-bottom: 50px;
+    color: #311878;
 }
 
-.sugestao p{
-    text-align: left;
-    margin-right: 150px;
-}
-
-.sugestao ul{
-    margin-left: 250px;
-}
-
-.sugestao h2{
-    margin-left: 180px;
-}
-.sugestao li{
+.content h2{
     margin-top: 10px;
+    margin-bottom: 40px;
+    margin-right: 600px;
+}
+
+.sugestao h5{
+    text-align: left;
+    color: #311878;
+    margin-top: 10px;
+    margin-right: 50px;
+}
+
+.exemplo h5{
+    text-align: center;
+    margin-right: 100px;
 }

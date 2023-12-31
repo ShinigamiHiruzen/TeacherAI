@@ -1,13 +1,13 @@
-
 <?php
+session_start();
 
-include_once "./bd/connect.php";
+include_once "./login/bd/connect.php";
 
 if (isset($_POST['username']) && isset($_POST['password'])) {
-    if (strlen($_POST['username']) && strlen($_POST['password']) != 0) {
-        
-        $username = $connect->real_escape_string($_POST['username']);
-        $password = $connect->real_escape_string($_POST['password']);
+    $username = $connect->real_escape_string($_POST['username']);
+    $password = $connect->real_escape_string($_POST['password']);
+
+    if (strlen($username) > 0 && strlen($password) > 0) {
 
         $sql_code = "SELECT * FROM usuario WHERE username = '$username' AND password = '$password'";
         $sql_query = $connect->query($sql_code) or die("Falha na execução do código SQL: " . $connect->error);
@@ -17,18 +17,16 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
         if ($quantidade == 1) {
             $usuario = $sql_query->fetch_assoc();
 
-            if (!isset($_SESSION)) {
-                session_start();
-            }
-
             $_SESSION['id'] = $usuario['id'];
             $_SESSION['username'] = $usuario['username'];
 
-            header("Location: .../home/index.html");
+            header("Location: ../home/index.html");
+        } else {
+            // Mensagem de erro se as credenciais forem inválidas.
+            echo "Nome de usuário ou senha incorretos.";
         }
-    }
+    } 
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -39,7 +37,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teacher's IA</title>
-    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./login/css/all.css">
     <link rel="shortcut icon" href="./images/ia20000-removebg-preview.ico" type="image/x-icon">
 </head>
 

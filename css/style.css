@@ -62,6 +62,10 @@ section{
     padding-top: 50px;
 }
 
+.btn-expandir{
+    
+}
+
 .barra-lateral{
     padding-top: 10px;
     width: 224px;
@@ -118,6 +122,7 @@ a:hover{
     margin-left: 150px;
     flex-wrap: wrap;
     max-width: 1200px;
+    gap: 10px;
 }
 
 .content h2{
@@ -140,8 +145,6 @@ a:hover{
     text-align: justify;
     font-size: var(--font-h4);
 }
-
-
 
 .back, .back1{
     background: #8767E0;
@@ -179,7 +182,7 @@ a:hover{
     color: var(--primary-color);
     margin-left: 300px;
     justify-content: center;
-    margin-top: 150px;
+    margin-top: 30px;
 }
 
 .search-box{
@@ -193,6 +196,7 @@ a:hover{
     border-radius: 25px;
     gap: 20px;
 }
+
 .txtBusca{
     width: 550px;
 }
@@ -224,6 +228,63 @@ a:hover{
 
 #magnifying:hover{
     color: var(--primary-color);
+}
+
+.quadradu, .quadradu1{
+    margin-left: 400px;
+}
+
+.box, .box-mais{
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid #8767E0;
+    border-radius: 10px;
+    height: 40px;
+    width: 1100px;
+    margin-left: -115px;
+    cursor: pointer;
+}
+
+.box-mais:hover,
+.box:hover{
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid #311878;
+    border-radius: 10px;
+    height: 40px;
+    width: 1100px;
+    margin-left: -115px;
+    background-color: #8767E0;
+    cursor: pointer;
+}
+
+.quadradu:hover .nome h4, .quadradu:hover .nome h5{
+    color: white;    
+}
+
+.nome{
+    display: flex;
+}
+
+.box h5{
+    margin-left: 15PX;
+}
+
+.nome h4{
+    margin-top: 7px;
+    margin-left: 15px;
+    color: #311878;
+}
+
+.nome h5{
+    position: absolute;
+    margin-top: 10px;
+    color: #311878;
+    margin-left: 800px;
+}
+
+.box-mais h5{
+    margin-left: 400px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -282,4 +343,5 @@ a:hover{
         margin-top: 15px;
         font-size: 16px;
     }
+
 }

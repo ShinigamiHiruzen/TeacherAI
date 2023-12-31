@@ -18,17 +18,7 @@
     font-size: calc(var(--font-h4) * 0.9); 
 }
 
-.back {
-    background: #8767E0;
-    border: #8767E0;
-    padding-left: 18px; 
-    padding-top: 18px; 
-    border-radius: 18px; 
-    margin-right: 36px; 
-    margin-top: 36px; 
-    height: 180px; 
-    width: 180px; 
-}
+
 
 .front {
     position: relative;
@@ -68,25 +58,28 @@
 .calendar {
     width: 20.7rem; 
     height: 333px; 
-    background-color: #222227;
-    box-shadow: 0 0.225rem 1.35rem rgba(0, 0, 0, 0.4); 
+    background-color: #8767E0;
+    box-shadow: 0 0.225rem 1.35rem rgba(0, 0, 0, 0.4);
+    border-radius: 10px; 
 }
 
 .month {
     width: 302.4px; 
     height: 49.5px;
-    background-color: var(--main-color);
+    background-color: #eee;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 0.9rem;
     text-align: center;
     text-shadow: 0 0.135rem 0.225rem rgba(0, 0, 0, 0.5); 
+    border-radius: 5px;
 }
 
 .month i {
     font-size: 1.125rem; 
     cursor: pointer;
+    color: #311878;
 }
 
 .month h1 {
@@ -95,6 +88,7 @@
     text-transform: uppercase;
     letter-spacing: 0.09rem; 
     margin-bottom: 0.45rem; 
+    color: #311878;
 }
 
 .month p {
@@ -143,19 +137,22 @@
     background-color: var(--main-color);
     border: 0.09rem solid var(--primary-color); 
     cursor: pointer;
+    border-radius: 25px;
 }
 
 .prev-date,
 .next-date {
-    opacity: 0.225;
+    opacity: 0.8;
 }
 
 .today {
     background-color: var(--primary-color);
-    border: 0.09rem solid var(--main-color); 
+    border: 0.09rem solid var(--main-color);
+    border-radius: 25px; 
 }
 
 .menu-Titulo{
+    margin-bottom: 25px;
     margin-top: 25px;
     margin-left: 250px;
     color: #311878;
@@ -164,53 +161,52 @@
 .main {
     display: flex;
     margin-left: 250px;
+    gap: 10px;
 }
 
 .main1 {
     display: flex;
     margin-left: 250px;
-}
-
-.main h1{
-    margin-left: 10px
-}
-
-.back, .back1{
-    background: #8767E0;
-    border: #8767E0;
-    padding-left: 10px;
-    padding-top: 10px;
-    border-radius: 20px;
-    margin-right: 40px;
-    margin-top: 40px;
-    height: 25px;
-    width: 85px; 
+    gap: 10px;
+    margin-top: 10px;
 }
 
 .front, .front1{
+    align-items: center;
     position: relative;
-    background: #311878;
-    border-radius: 20px;
+    border: 2px solid #8767E0;
+    border-radius: 10px;
     color: var(--text-color);
     position: relative;
-      width: 90px;
+      width: 100px;
       height: 30px;
       display: flex;
       flex-direction: column;
+      cursor: pointer;
 }
 
-.front i, .front1 i{
+.front1 i{
     display: flex;
     justify-content: center;
     padding-top: 10px;
     font-size: 10px;
     cursor: pointer;
+    color: #311878;
   }
 
 .front1 h1{
+    color: #311878;
     font-size: 15px;
     margin-top: 5px;
-    margin-left: 13px;
+}
+
+.front1:hover{
+    border: 2px solid #311878;
+    background-color: #8767E0;
+}
+
+.front1:hover h1, .front1:hover i{
+    color: white;
 }
 
 .place{
@@ -218,6 +214,11 @@
     font-size: 15px;
     color: #311878;
     display: flex;
+    gap: 10px;
+}
+
+.front1 hr{
+    height: 2px;
 }
 
 .place h2{
@@ -225,77 +226,77 @@
     margin-bottom: -8px;
 }
 
-.back, .back2{
-    background: #8767E0;
-    border: #8767E0;
-    padding-left: 10px;
-    padding-top: 10px;
-    border-radius: 20px;
-    margin-right: 40px;
-    margin-top: 5px;
-    height: 25px;
-    width: 85px; 
-}
-
-.front, .front2{
+.front2, .front3{
     position: relative;
-    background: #311878;
-    border-radius: 20px;
+    border: 2px solid #8767E0;
+    border-radius: 10px;
     color: var(--text-color);
     position: relative;
       width: 90px;
       height: 30px;
       display: flex;
       flex-direction: column;
+      cursor: pointer;
+      align-items: center;
 }
-
-.front i, .front2 i{
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
-    font-size: 10px;
-    cursor: pointer;
-  }
 
 .front2 h1{
+    color: #311878;
     font-size: 15px;
     margin-top: 5px;
-    margin-left: 33px;
 }
 
-.mes h1{
-    margin-left: 10px;
+.front2:hover{
+    border: 2px solid #311878;
+    background-color: #8767E0;
 }
 
-.ano h1{
-    margin-left: 15px;
+.front3:hover{
+    border: 2px solid #311878;
+    background-color: #8767E0;
 }
 
-.back, .back3{
-    background: #8767E0;
-    border: #8767E0;
-    padding-left: 10px;
-    padding-top: 10px;
-    border-radius: 20px;
-    margin-right: 40px;
-    margin-top: 5px;
-    height: 25px;
-    width: 140px; 
+.front2:hover h1, .front2:hover i, .front3:hover h1{
+    color: white;
 }
 
-.front, .front3{
+.dia h5{
+    margin-bottom: 10px;
+    font-size: 20px;
+    margin-left: 27px;
+}
+.mes h5{
+    margin-bottom: 10px;
+    font-size: 20px;
+    margin-left: 27px;
+}
+.ano h5{
+    margin-bottom: 10px;
+    font-size: 20px;
+    margin-left: 27px;
+}
+.tag h5{
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding-left: 12px;
+}
+
+
+.front3{
     position: relative;
-    background: #311878;
-    border-radius: 20px;
+    border: 2px solid #8767E0;
+    border-radius: 10px;
     color: var(--text-color);
     position: relative;
     width: 140px;
     height: 30px;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
+    margin-left: 10px;
 }
 
-.front i, .front3 i{
+.front3 i{
     display: flex;
     justify-content: center;
     padding-top: 10px;
@@ -304,12 +305,12 @@
   }
 
 .front3 h1{
+    color: #311878;
     font-size: 15px;
     margin-top: 5px;
-    margin-left: 27px;
 }
 
-.tag h2{
+.tag h5{
     margin-left: -5px;
 }
 

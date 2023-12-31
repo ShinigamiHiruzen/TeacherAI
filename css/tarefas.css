@@ -3,10 +3,14 @@
 
 .content{
     display: flex;
+    gap: 10px;
 }
+
+
 
 .tarefas{
     margin-left: 300px;
+    margin-top: 20px;
 }
 .tarefa {
     display: flex;
@@ -14,34 +18,43 @@
     align-items: center;
 }
 
-.back1{
-    background: #8767E0;
-    border: #8767E0;
-    padding-left: 20px;
-    padding-top: 20px;
-    border-radius: 20px;
-    margin-right: 40px;
-    margin-top: 40px;
-    height: 100px;
-    width: 100px;
-}
+
 .front1{
     position: relative;
-    background: #311878;
+    border: 2px solid #8767E0;
     border-radius: 20px;
     color: var(--text-color);
     position: relative;
-      width: 100%;
-      height: 100%;
+      width: 150px;
+      height: 100px;
       display: flex;
       flex-direction: column;
       font-size: 10px;
 }
 
+.front1:hover{
+  border: 2px solid #311878;
+  background-color: #8767E0;
+  cursor: pointer;
+}
+
+.front1:hover h1, .front1:hover i, .front1:hover h2{
+  color: white;
+}
+
+.front1 h2{
+  color: #311878;
+  font-size: 15px;
+}
+.front1 h1{
+  color: #311878;
+  font-size: 15px;
+  margin-top: -5px;
+}
+
 .front i, .front1 i{
     display: flex;
     justify-content: center;
-    padding-top: 65px;
     font-size: 10px;
     cursor: pointer;
   }
@@ -64,13 +77,15 @@
 
   .titulo1{
     margin-top: 20px;
-    margin-left: 250px;
+    margin-bottom: 15px;
+    margin-left: 300px;
     color: #311878;
   }
 
   .tarefas1{
     margin-left: 300px;
     display: flex;
+    gap: 10px;
 }
 
 .tarefas-title{
@@ -95,7 +110,7 @@
 
 .icon{
   font-size: 40px;
-  margin-top: 75px;
+  margin-top: 20px;
   cursor: pointer;
 }
 

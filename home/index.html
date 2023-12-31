@@ -17,7 +17,6 @@
     <header>
         <div id="header">
             <div class="title">
-                <i class="fa-solid fa-bars"></i>
                 <h2>Teacher's AI Support</h2>
             </div>
 
@@ -29,43 +28,72 @@
 
     <section class="central">
 
-        <div class="barra-lateral">
-                <ul class="navbar">
+        <nav class="barra-lateral">
+
+            <div btn-expandir>
+                <i class="fa-solid fa-bars"></i>
+            </div>
                 
-                <li>
-                    <a href="../home/index.html"><i class="fa-solid fa-house"></i> Home</a>
-                </li>
-                <hr>
-                <li> 
-                    <a href="../utilidades/favoritos.html"> <i class="fa-solid fa-bookmark"></i> Favoritos</a>
-                </li>
-                <hr>
-                <li>
-                    <a href="../utilidades/calendario.html"><i class="fa-solid fa-calendar-days"></i> Calendário</a>
-                </li>
-                <hr>
-                <li>
-                    <a href="../tarefas/tarefas.html"><i class="fa-solid fa-clipboard-list"></i> Tarefas</a>
-                </li>
-                <hr>
-                <li>
-                    <a href="../suporte/acessibilidade.html"><i class="fa-solid fa-universal-access"></i> Acessibilidade</a>
-                </li>
-                <hr>
-                <li>
-                    <a href="../tarefas/desempenho.html"><i class="fa-solid fa-chart-simple"></i> Desempenho</a>
-                </li>
-                <hr>
-                <li>
-                    <a href="../suporte/configuracoes.html"><i class="fa-solid fa-gear"></i> Configurações</a>
-                </li>
-                <hr>
-                <li class="ajuda">
-                    <a href="../suporte/ajuda.html"><i class="fa-solid fa-circle-info"></i> Precisa de ajuda?</a>
-                </li>
-                </ul>
+            <ul class="navbar">
                 
-        </div>
+                <li class="item-menu">
+                    <a href="../home/index.html">
+                        <span class="icon"><i class="fa-solid fa-house"></i></span>
+                        <span class="txt-link">Home</span>
+                    </a>
+                </li>
+                    <hr>
+                <li class="item-menu"> 
+                    <a href="../utilidades/favoritos.html">
+                        <span class="icon"><i class="fa-solid fa-bookmark"></i></span>
+                        <span class="txt-link">Favoritos</span>
+                    </a>
+                </li>
+                    <hr>
+                <li class="item-menu">
+                    <a href="../utilidades/calendario.html">
+                        <span class="icon"><i class="fa-solid fa-calendar-days"></i></span>
+                        <span class="txt-link">Calendário</span>
+                    </a>
+                </li>
+                    <hr>
+                <li class="item-menu">
+                    <a href="../tarefas/tarefas.html">
+                        <span class="icon"><i class="fa-solid fa-clipboard-list"></i></span>
+                        <span class="txt-link">Tarefas</span>
+                    </a>
+                </li>
+                    <hr>
+                <li class="item-menu">
+                    <a href="../suporte/acessibilidade.html">
+                        <span class="icon"><i class="fa-solid fa-universal-access"></i></span>
+                        <span class="txt-link">Acessibilidade</span>
+                    </a>
+                </li>
+                    <hr>
+                <li class="item-menu">
+                    <a href="../tarefas/desempenho.html">
+                        <span class="icon"><i class="fa-solid fa-chart-simple"></i></span>
+                        <span class="txt-link">Desempenho</span>
+                    </a>
+                </li>
+                    <hr>
+                <li class="item-menu">
+                    <a href="../suporte/configuracoes.html">
+                        <span class="icon"><i class="fa-solid fa-gear"></i></span>
+                        <span class="txt-link">Configurações</span>
+                    </a>
+                </li>
+                    <hr>
+                <li class="item-menu">
+                    <a href="../suporte/ajuda.html">
+                    <span class="icon"><i class="fa-solid fa-circle-info"></i></span>
+                    <span class="txt-link">Precisa de ajuda?</span>
+                    </a>
+                </li>
+            </ul>
+                
+        </nav>
         
     </section>
 
@@ -78,43 +106,60 @@
           </div>
     </div>
     
-    <h1 class="turmas-title">Minhas Turmas</h1>
+    <h2 class="turmas-title">Minhas Turmas</h2>
 
     <div class="content" id="content">
         
-        <div class="turmas">
-            <div class="shadowBox">
-                <div class="box">
-
+        <div class="quadradu">
+            <div class="box">
+                <div class="nome">
+                    <h4>Desenvolvimeto de Sistemas II</h4>
+                    <h5>82676</h5>
                 </div>
-            </div>
-        </div>    
-
-
-        <div class="back" id="editableDiv">
-            <div class="front">
-                <h3 contenteditable="true" id="editableH3">82676</h3>
-                    <hr>
-                <h4 contenteditable="true" id="editableH4">Curso Desenvolvimento de Sistemas</h4>
             </div>
         </div>
-            
-            <div class="back" id="editableDiv">
-                <div class="front">
-                    <h3 contenteditable="true" id="editableH3">82676</h3>
-                    <hr>
-                    <h4 contenteditable="true" id="editableH4">Curso Desenvolvimento de Sistemas</h4>
+        <div class="quadradu">
+            <div class="box">
+                <div class="nome">
+                    <h4>Desenvolvimento para Aplicativos Mobile</h4>
+                    <h5>82676</h5>
                 </div>
             </div>
-
-            <div class="back1">
-                <div class="front1">
-                    <i class="fa-solid fa-plus" id="plus" onclick="createEditableDiv()"></i>
+        </div>
+        <div class="quadradu">
+            <div class="box">
+                <div class="nome">
+                    <h4>Teste de Sistemas</h4>
+                    <h5>82676</h5>
                 </div>
             </div>
-                
+        </div>
+        <div class="quadradu">
+            <div class="box">
+                <div class="nome">
+                    <h4>Banco de Dados</h4>
+                    <h5>82676</h5>
+                </div>
+            </div>
+        </div>
+        <div class="quadradu1">
+            <div class="box">
+                <div class="nome">
+                    <h4>Trabalho de Conclusão de Curso</h4>
+                    <h5>82676</h5>
+                </div>
+            </div>
+        </div>
+        <div class="quadradu">
+            <div class="box-mais" onclick="createEditableDiv()">
+                <div class="nome editable">
+                  <h5 class="add" contenteditable="true" onkeydown="handleEnterKeyPress(this)">Adicionar Turma</h5>
+                </div>
+              </div>
         </div>
     </div>
+
+
     <script src="../js/script.js"></script>
 
 </body>
