@@ -1,0 +1,92 @@
+@import './header.css';
+@import './sidebard.css';
+
+.onoff{
+    display: flex;
+    margin-top: 15px;
+    gap: 15px;
+}
+
+.onoff h5{
+    margin-top: 5px;
+    color: #311878;
+}
+
+.onoff input.toggle {
+    display: none;
+}
+
+.onoff input.toggle + label {
+    display: inline-block;
+    position: relative;
+    box-shadow: inset 0 0 0px 1px #d5d5d5;
+    height: 30px;
+    width: 60px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.onoff input.toggle + label:before {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    background: rgba(19, 191, 17, 0);
+    transition: 0.1s ease-in-out;
+}
+
+.onoff input.toggle + label:after {
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 0;
+    left: 0px;
+    border-radius: 30px;
+    background: #fff;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: 0.1s ease-in-out;
+}
+
+.onoff input.toggle:checked + label:before {
+    width: 60px;
+    background: #311878;
+}
+
+.onoff input.toggle:checked + label:after {
+    left: 30px;
+    box-shadow: inset 0 0 0 1px #311878, 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.buttons{
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.config{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-right: 300px;
+}
+
+.config h2{
+    color: #311878;
+    margin-right: 260px;  
+}
+
+.perfil{
+    margin-top: 20px;
+}
+
+.help{
+    margin-right: 50px;
+}
+
+.help h5{
+    margin-top: 30px;
+}
