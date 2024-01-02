@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portal | Docente</title>
+        <title>Configuração | Docente</title>
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
             integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -37,7 +37,7 @@
         <nav class="barra-lateral">
                 
                 <ul>
-                    <li class="item-menu ativo">
+                    <li class="item-menu">
                         <a href="../home/index.html">
                             <span class="icon"><i class="fa-solid fa-house"></i></span>
                             <span class="txt-link">Home</span>
@@ -79,7 +79,7 @@
                         </a>
                     </li>
                     <hr>
-                    <li class="item-menu">
+                    <li class="item-menu ativo">
                         <a href="../suporte/configuracoes.html">
                             <span class="icon"><i class="fa-solid fa-gear"></i></span>
                             <span class="txt-link">Configurações</span>
@@ -96,6 +96,17 @@
                     
             </nav>
 
+            <div vw class="enabled">
+                <div vw-access-button class="active"></div>
+                <div vw-plugin-wrapper>
+                  <div class="vw-plugin-top-wrapper"></div>
+                </div>
+              </div>
+              <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+              <script>
+                new window.VLibras.Widget('https://vlibras.gov.br/app');
+              </script>
+
         <section class="config">
 
 
@@ -108,12 +119,12 @@
 
                 <div class="img">
                     <img src="" alt="perfil">
-                    <button>Alterar imagem de perfil</button>
+                    <button class="btn-img">Alterar imagem</button>
                 </div>
                 
-                    <h5>Alterar informações de login</h5>
+                    <a href=""><h5>Alterar informações de login</h5></a>
 
-                    <h5>Recuperação de senha</h5>
+                    <a href=""><h5>Recuperação de senha</h5></a>
 
             </div>
 
@@ -153,7 +164,7 @@
 
             <div class="help">
                 <h5>Está com problemas?</h5>
-            <a href="">Fale conosco</a>
+            <a href="../suporte/formulario.html"><h5>Fale conosco</h5></a>
             </div>
             
 

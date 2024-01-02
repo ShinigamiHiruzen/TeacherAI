@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../images/ia20000-removebg-preview.ico" type="image/x-icon">
-    <title>Portal | Docente</title>
+    <title>Desempenho | Docente</title>
     <link rel="stylesheet" href="../css/desempenho.css">
 </head>
 <body>
@@ -30,7 +30,7 @@
     <nav class="barra-lateral">
             
             <ul>
-                <li class="item-menu ativo">
+                <li class="item-menu">
                     <a href="../home/index.html">
                         <span class="icon"><i class="fa-solid fa-house"></i></span>
                         <span class="txt-link">Home</span>
@@ -65,7 +65,7 @@
                     </a>
                 </li>
                 <hr>
-                <li class="item-menu">
+                <li class="item-menu ativo">
                     <a href="../tarefas/desempenho.html">
                         <span class="icon"><i class="fa-solid fa-chart-simple"></i></span>
                         <span class="txt-link">Desempenho</span>
@@ -88,6 +88,17 @@
             </ul>
                 
     </nav>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
 
     <section class="forms">
         <div class="centro">
@@ -140,23 +151,23 @@
 
     <div class="config"> 
             
-        <h2>Análise de desempenho</h2>
-
+        <h3>Análise de desempenho</h3>
+            <hr>
         <div class="itens">
 
             <li class="item">
                 <div class="aluno">
-                    <div class="nome-aluno">
-                        <h1>Breno Conceição Correira</h1>
+                    <div class="nome-formulario">
+                        <h2></h2>
                     </div>
                 </div>
             </li>
 
             <li class="item">
                 <div class="desen">
-                    <h1>Esse aluno atingiu</h1>
+                    <h3>Percentual de Desempenho</h3>
                     <div class="perce">
-                        <h2>60%</h2>
+                        <h3>0%</h3>
                     </div>
                 </div>
             </li>
@@ -164,13 +175,13 @@
             <li class="item">
                 <div class="resp">   
                     <div class="arc">    
-                        <h2>Erros:</h2>
-                        <h2>0</h2>
+                        <h3>Erros:</h3>
+                        <h3>0</h3>
                     </div>
-
+                        
                     <div class="arc">    
-                        <h2>Acertos:</h2>
-                        <h2>0</h2>
+                        <h3>Acertos:</h3>
+                        <h3>0</h3>
                     </div>
             </li>
 
@@ -186,12 +197,14 @@
             </div>
             </li>
             <li class="item">
-                <h2 class="expl1">Selecione outro aluno.</h2>
+                <h3 class="expl1">Selecione o aluno:</h3>
 
             <div class="list-aluno">
                 <select id="alunoSelect" onchange="selecionarAluno()">
                     <option value="aluno1">Breno Conceição Correira</option>
                     <option value="aluno2">Felipe Soares Lisboa de Melo</option>
+                    <option value="aluno3">Eduardo de Andrade Bomfim Junior</option>
+                    <option value="aluno4">Mari Alessandra Santana de Sousa</option>
                 </select>
             </div>
             </li>

@@ -1,9 +1,9 @@
 <?php
 
-include_once "protect.php";
+include_once "../login/bd/protection.php";
 
 ?>
-
+  edu é cagão
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -20,40 +20,24 @@ include_once "protect.php";
 <body>
     
     <!-- Header -->
+
     <header>
         <div id="header">
-            <div class="title">
-                <h2>Teacher's AI Support</h2>
-
-                <style>
-                    @media only screen and (max-width: 1367px) and (max-width: 1920px) {
-                        .title h2{
-                            margin-left: 100px;
-                        }
-                    }
-
-                    @media only screen and (min-width: 1366px) {
-                        .title h2{
-                            margin-left: -30px;
-                        }
-                    }
-                </style>
-
-            </div>
-
-            <div class="log">
-                <p><i class="fa-solid fa-user"></i><a href="../login.php"> Logout</a></p>
-            </div>
-        </div>
-    </header>
-
-    <sec class="central">
-
-        <nav class="barra-lateral">
 
             <div class="btn-expandir" id="btn-exp">
                 <i class="fa-solid fa-bars"></i>
+            </div>    
+
+            <h3>Teacher's AI Support</h3>
+            
+            <div class="log">
+                <p><i class="fa-solid fa-user"></i><a href="../index.php"> Logout</a></p>
             </div>
+        </div>
+    </header>
+        
+    <nav class="barra-lateral">
+            
             <ul>
                 <li class="item-menu ativo">
                     <a href="../home/index.html">
@@ -62,52 +46,52 @@ include_once "protect.php";
                     </a>
                 </li>
                 <hr>
-                <li class="item-menu ativo"> 
+                <li class="item-menu"> 
                     <a href="../utilidades/favoritos.html">
                         <span class="icon"><i class="fa-solid fa-bookmark"></i></span>
                         <span class="txt-link">Favoritos</span>
                     </a>
                 </li>
                 <hr>
-                <li class="item-menu ativo">
+                <li class="item-menu">
                     <a href="../utilidades/calendario.html">
                         <span class="icon"><i class="fa-solid fa-calendar-days"></i></span>
                         <span class="txt-link">Calendário</span>
                     </a>
                 </li>
                 <hr>
-                <li class="item-menu ativo">
+                <li class="item-menu">
                     <a href="../tarefas/tarefas.html">
                         <span class="icon"><i class="fa-solid fa-clipboard-list"></i></span>
                         <span class="txt-link">Tarefas</span>
                     </a>
                 </li>
                 <hr>
-                <li class="item-menu ativo">
+                <li class="item-menu">
                     <a href="../suporte/acessibilidade.html">
                         <span class="icon"><i class="fa-solid fa-universal-access"></i></span>
                         <span class="txt-link">Acessibilidade</span>
                     </a>
                 </li>
                 <hr>
-                <li class="item-menu ativo">
+                <li class="item-menu">
                     <a href="../tarefas/desempenho.html">
                         <span class="icon"><i class="fa-solid fa-chart-simple"></i></span>
                         <span class="txt-link">Desempenho</span>
                     </a>
                 </li>
                 <hr>
-                <li class="item-menu ativo">
+                <li class="item-menu">
                     <a href="../suporte/configuracoes.html">
                         <span class="icon"><i class="fa-solid fa-gear"></i></span>
                         <span class="txt-link">Configurações</span>
                     </a>
                 </li>
                 <hr>
-                <li class="item-menu ativo">
+                <li class="item-menu">
                     <a href="../suporte/ajuda.html">
                     <span class="icon"><i class="fa-solid fa-circle-info"></i></span>
-                    <span class="txt-link">Precisa de ajuda?</span>
+                    <span class="txt-link">Ajuda</span>
                     </a>
                 </li>
             </ul>
@@ -122,7 +106,16 @@ include_once "protect.php";
             </div>
           </div>
     </div>
-    
+    <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
     <h2 class="turmas-title">Minhas Turmas</h2>
 
     <div class="content" id="content">
@@ -135,6 +128,7 @@ include_once "protect.php";
                 </div>
             </div>
         </div>
+
         <div class="quadradu">
             <div class="box">
                 <div class="nome">
@@ -143,6 +137,7 @@ include_once "protect.php";
                 </div>
             </div>
         </div>
+
         <div class="quadradu">
             <div class="box">
                 <div class="nome">
@@ -151,6 +146,7 @@ include_once "protect.php";
                 </div>
             </div>
         </div>
+
         <div class="quadradu">
             <div class="box">
                 <div class="nome">
@@ -159,6 +155,7 @@ include_once "protect.php";
                 </div>
             </div>
         </div>
+
         <div class="quadradu">
             <div class="box">
                 <div class="nome">
@@ -177,6 +174,5 @@ include_once "protect.php";
     </div>
 
     <script src="../js/script.js"></script>
-
 </body>
 </html>

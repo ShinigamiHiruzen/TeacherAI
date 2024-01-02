@@ -21,6 +21,12 @@
   cursor: pointer;
 }
 
+.centro h2{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #311878;
+}
+
 .form:hover{
   display: flex;
   align-items: center;
@@ -74,16 +80,25 @@
   margin-left: 40px;
 }
 
-.nome-aluno {
+.nome-formulario {
   font-size: 10px;
   margin-top: 10px;
-  margin-left: 60px;
+  
+  display: flex;
+  justify-content: center;
 }
 
+.nome-formulario h2{
+  color: white;
+}
 .desen {
-  font-size: 10px;
   margin-top: 20px;
-  margin-left: 90px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .perce {
@@ -91,22 +106,21 @@
   border-radius: 25px;
   width: 300px;
   height: 50px;
-  margin-top: 10px;
-  margin-left: -40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.perce h2 {
-  padding-top: 1px;
-  margin-left: 112px;
-  font-size: 30px;
+.perce h3 {
   color: white;
-  text-align: center;
-  justify-content: center;
+  margin-bottom: 30px;
+  
 }
 
 .resp {
   display: flex;
-  align-items: center ;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .arc {
@@ -117,13 +131,16 @@
 
 .hr1 {
   height: 3px;
-  background: black;
+  background: #fff;
+  width:100%;
+  margin-left: -10px;
 }
 
 .expl {
   margin-left: 15px;
   margin-top: 15px;
   font-size: 15px;
+  color: #fff;
 }
 
 .suges h1 {
@@ -137,6 +154,7 @@
   margin-left: 15px;
   margin-top: 15px;
   font-size: 20px;
+  color: #fff;
 }
 
 .list-aluno {
@@ -169,19 +187,24 @@
 
 .config.expandir {
   margin-top: 60px;
-  margin-left: 930px;
+  margin-left: 950px;
   background-color: var(--second-color);
   position: fixed;
   width: 400px;
   height: 1000px;
 }
 
-.config h2 {
+.config h3 {
   margin-top: 20px;
-  margin-right: 5px;
+  margin-right: 10px;
   color: #fff;
   display: flex;
   margin-left: 20px;
+}
+
+.config hr{
+  width: 100%;
+  margin-top: 20px;
 }
 
 .btn-expandi {

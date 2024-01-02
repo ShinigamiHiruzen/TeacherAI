@@ -90,7 +90,7 @@ textarea::placeholder {
   flex-direction: column;
   margin-top: 15px;
   gap: 15px;
-  margin-left: -330px;
+  padding-right: 335px;
 }
 
 /*Fim Form*/

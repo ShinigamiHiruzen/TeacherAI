@@ -23,11 +23,45 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
             header("Location: ../home/index.php");
         } else {
             // Mensagem de erro se as credenciais forem inválidas.
-            echo "Nome de usuário ou senha incorretos.";
+            $errorMessage = "Nome de usuário ou senha incorretos.";
         }
     } 
 }
 ?>
+
+<?php if (isset($errorMessage)): ?>
+    <div class="notification">
+        <span class="close-btn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <?php echo $errorMessage; ?>
+    </div>
+<?php endif; ?>
+
+<style>
+.notification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    width: 300px;
+    background-color: #f44336;
+    color: white;
+    position: fixed;
+    top: 10px; 
+    left: 10px;
+    bottom:10px;
+    border-radius:10px;
+    margin-left: -50px; 
+    z-index: 1000;
+    padding: 20px;
+}
+
+.close-btn {
+    cursor: pointer;
+    padding-right: 6px;
+}
+</style>
+
+
 
 <!DOCTYPE html>
 <html lang="pt-br">

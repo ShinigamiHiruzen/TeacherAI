@@ -1,0 +1,74 @@
+@import './header.css';
+@import './sidebard.css';
+
+.formulario{
+    margin-left: 350px;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--main-color);
+    width: 700px;
+    border-radius: 10px;
+    gap: 20px;
+    height: 600px;
+}
+
+.formulario h2, h4{
+    color: white;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cont{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.cont input, textarea{
+    width: 400px;
+    height: 25px;
+    border-radius: 5px;
+    margin-inline-start: 10px;
+    background: white;
+}
+
+.cont textarea{
+    height: 120px;
+    max-width: 400px;
+    max-height: 120px;
+}
+
+.cont label{
+    color: white;
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario input::placeholder, .formulario textarea::placeholder{
+    padding-left: 15px;
+    font-size: 16px;
+    color: gray;
+}
+
+button{
+    height: 40px;
+    width: 100px;
+    color: white;
+    background-color: #5b3fa7;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: var(--primary-color);
+    cursor: pointer;
+}

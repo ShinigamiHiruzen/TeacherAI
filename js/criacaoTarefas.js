@@ -74,8 +74,6 @@ function Turma(nome) {
   this.nome = nome;
 }
 
-
-
 var turma1 = new Turma("Turma A");
 var turma2 = new Turma("Turma B");
 var turma3 = new Turma("Turma C");

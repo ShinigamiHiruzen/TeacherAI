@@ -95,17 +95,26 @@
 
 .perfil h5{
     padding-top: 10px;
+    color: #311878;
+}
+
+.perfil a{
+    text-decoration: none;
 }
 
 .help{
     margin-left: -140px;
+    margin-bottom: 20px;
 }
 
 .help h5{
-    margin-top: 30px;
+    margin-top: 20px;
+    color: #311878;
 }
 
-
+.help a{
+    text-decoration: none;
+}
 
 .img {
     display: flex;
@@ -119,4 +128,67 @@
     height: 100px;
     object-fit: cover; 
     margin-bottom: 10px; 
+}
+
+.btn-img{
+    height: 30px;
+    width: 200px;
+    background-color: var(--second-color);
+    color: #fff;
+    cursor: pointer;
+}
+
+.onoff input.toggle:checked + label:before {
+    width: 60px;
+    background: #311878;
+}
+
+.onoff input.toggle:checked + label:after {
+    left: 30px;
+    box-shadow: inset 0 0 0 1px #311878, 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.onoff input.toggle:checked + label{
+    background-color: #311878;
+}
+
+.onoff input.toggle:checked + label h5 {
+    color: white;
+}
+
+.onoff input.toggle:checked + label:after {
+    background: #fff;
+}
+
+body.dark-mode {
+    background-color: #1c1c1c;
+    color: white;
+}
+
+.barra-lateral.dark-mode {
+    background-color: #311878;
+}
+
+header.dark-mode {
+    background-color: #311878;
+    color: white;
+}
+
+.config.dark-mode {
+    background-color: #1c1c1c;
+}
+
+body.dark-mode .config h2,
+body.dark-mode .config h3,
+body.dark-mode .config h5,
+body.dark-mode .config .perfil h2,
+body.dark-mode .config .perfil h5,
+body.dark-mode .config .buttons h2,
+body.dark-mode .config .buttons h5,
+body.dark-mode .config .help h5 {
+    color: white;
+}
+
+.help.dark-mode h5 {
+    color: white;
 }

@@ -18,3 +18,12 @@ btnExpd.addEventListener('click', function(){
   menuSid.classList.toggle('expandir')
 })
 
+const forms = document.querySelectorAll('.form');
+
+forms.forEach(form => {
+    form.addEventListener('click', () => {
+        const formText = form.querySelector('.text h5').innerText;
+
+        document.querySelector('.nome-formulario h2').innerText = formText;
+    });
+});

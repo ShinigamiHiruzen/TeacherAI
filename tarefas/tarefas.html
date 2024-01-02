@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portal | Docente</title>
+        <title>Tarefas | Docente</title>
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
             integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -37,7 +37,7 @@
         <nav class="barra-lateral">
                 
                 <ul>
-                    <li class="item-menu ativo">
+                    <li class="item-menu">
                         <a href="../home/index.html">
                             <span class="icon"><i class="fa-solid fa-house"></i></span>
                             <span class="txt-link">Home</span>
@@ -58,7 +58,7 @@
                         </a>
                     </li>
                     <hr>
-                    <li class="item-menu">
+                    <li class="item-menu ativo">
                         <a href="../tarefas/tarefas.html">
                             <span class="icon"><i class="fa-solid fa-clipboard-list"></i></span>
                             <span class="txt-link">Tarefas</span>
@@ -95,6 +95,17 @@
                 </ul>
                     
         </nav>
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+          </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+          </script>
 
         <section class="tarefas">
 

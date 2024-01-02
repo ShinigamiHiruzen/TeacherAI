@@ -15,7 +15,7 @@
             rel="stylesheet">
         <link rel="shortcut icon" href="../images/ia20000-removebg-preview.ico"
             type="image/x-icon">
-        <title>Portal | Docente</title>
+        <title>Criar Tarefa | Docente</title>
     </head>
     <body>
         <header>
@@ -37,7 +37,7 @@
         <nav class="barra-lateral">
 
             <ul>
-                <li class="item-menu ativo">
+                <li class="item-menu">
                     <a href="../home/index.html">
                         <span class="icon"><i
                                 class="fa-solid fa-house"></i></span>
@@ -61,7 +61,7 @@
                     </a>
                 </li>
                 <hr>
-                <li class="item-menu">
+                <li class="item-menu ativo">
                     <a href="../tarefas/tarefas.html">
                         <span class="icon"><i
                                 class="fa-solid fa-clipboard-list"></i></span>
@@ -103,6 +103,17 @@
             </ul>
 
         </nav>
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+          </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+          </script>
 
         <section class="form">
 
@@ -168,6 +179,7 @@
         <div class="btn-expandi" id="btn-expd">
             <i class="fa-solid fa-paperclip"></i>
         </div>
+        
         <div class="config"> 
             
                 <h2>Configurações</h2>
@@ -216,7 +228,8 @@
                             </div>
                             
                             <div class="text-information">
-                                <i class="fa-solid fa-circle-info"></i><h5>Após o envio da mensagem, a mesma não poderá ser alterada</h5>
+                                <i class="fa-solid fa-circle-info"></i>
+                                <h5>Após o envio a mensagem não poderá ser alterada</h5>
                             </div>
                                
                             </div>

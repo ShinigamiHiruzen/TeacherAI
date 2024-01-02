@@ -50,8 +50,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -70px; 
-    margin-left: auto;
+    margin-top: -100px; 
+    margin-left: 800px;
     margin-right: 20px;
 }
 
@@ -318,7 +318,7 @@
     background: var(--main-color);
     border-radius: 15px;
     margin-top: 40px;
-    width: 700px;
+    width: 600px;
     height: 250px;
     margin-left: 250px;
 }
@@ -327,7 +327,7 @@
     background-color: lightgrey;
     margin-left: 10px;
     border-radius: 15px;
-    width: 600px;
+    width: 500px;
     height: 30px;
     margin-top: 200px;
     padding-left: 20px;
@@ -338,3 +338,6 @@
     cursor: pointer;
 }
 
+.org-eventos{
+   margin-top: -200px;
+}

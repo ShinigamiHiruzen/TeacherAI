@@ -37,7 +37,7 @@
         <nav class="barra-lateral">
                 
                 <ul>
-                    <li class="item-menu ativo">
+                    <li class="item-menu">
                         <a href="../home/index.html">
                             <span class="icon"><i class="fa-solid fa-house"></i></span>
                             <span class="txt-link">Home</span>
@@ -65,7 +65,7 @@
                         </a>
                     </li>
                     <hr>
-                    <li class="item-menu">
+                    <li class="item-menu ativo">
                         <a href="../suporte/acessibilidade.html">
                             <span class="icon"><i class="fa-solid fa-universal-access"></i></span>
                             <span class="txt-link">Acessibilidade</span>
@@ -96,6 +96,17 @@
                     
         </nav>
 
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+          </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+          </script>
+          
         <section class="content">
 
             <h2>Acessibilidade</h2>

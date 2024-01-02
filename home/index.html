@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/ia20000-removebg-preview.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Portal | Docente</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="../images/ia20000-removebg-preview.ico" type="image/x-icon">
+    
 </head>
 <body>
     
@@ -25,7 +26,7 @@
             <h3>Teacher's AI Support</h3>
             
             <div class="log">
-                <p><i class="fa-solid fa-user"></i><a href="../login.php"> Logout</a></p>
+                <p><i class="fa-solid fa-user"></i><a href="../index.php"> Logout</a></p>
             </div>
         </div>
     </header>
@@ -90,7 +91,7 @@
                 </li>
             </ul>
                 
-        </nav>
+    </nav>
 
     <div class="search-box">
           <div class="divBusca">    
@@ -99,15 +100,26 @@
                 <i class="fa-solid fa-magnifying-glass" id="magnifying"></i>
             </div>
           </div>
+    </div>  
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
     </div>
-    
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+      
     <h2 class="turmas-title">Minhas Turmas</h2>
 
     <div class="content" id="content">
-        
+
         <div class="quadradu">
             <div class="box">
-                <div class="nome">
+                <div class="nome" id="nome1">
                     <h4>Desenvolvimeto de Sistemas II</h4>
                     <h5>82676</h5>
                 </div>
@@ -116,7 +128,7 @@
 
         <div class="quadradu">
             <div class="box">
-                <div class="nome">
+                <div class="nome" id="nome2">
                     <h4>Desenvolvimento para Aplicativos Mobile</h4>
                     <h5>82676</h5>
                 </div>
@@ -125,7 +137,7 @@
 
         <div class="quadradu">
             <div class="box">
-                <div class="nome">
+                <div class="nome" id="nome3">
                     <h4>Teste de Sistemas</h4>
                     <h5>82676</h5>
                 </div>
@@ -134,7 +146,7 @@
 
         <div class="quadradu">
             <div class="box">
-                <div class="nome">
+                <div class="nome" id="nome4">
                     <h4>Banco de Dados</h4>
                     <h5>82676</h5>
                 </div>
@@ -143,16 +155,16 @@
 
         <div class="quadradu">
             <div class="box">
-                <div class="nome">
+                <div class="nome" id="nome5">
                     <h4>Trabalho de Conclusão de Curso</h4>
                     <h5>82676</h5>
                 </div>
             </div>
         </div>
-        <div class="quadradu1" >
-            <div class="box-mais" onclick="createEditableDiv()">
-                <div class="nome">
-                  <h5 class="add">Adicionar Turma</h5>
+            <div class="quadradu1" >
+                <div class="box-mais" onclick="createEditableDiv()">
+                    <div class="nome">
+                    <h5 class="add">Adicionar Turma</h5>
                 </div>
               </div>
         </div>

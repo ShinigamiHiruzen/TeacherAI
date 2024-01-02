@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto Mono', monospace;
 }
 
-:root{
+:root {
     --bg-color: #F8F6F6;
     --text-color: white;
     --main-color: #8767E0;
@@ -14,12 +14,13 @@
     --font-h4: 22px;
 }
 
-body{
+body {
     background: var(--bg-color);
     height: 100vh;
+    padding-top: 20px;
 }
 
-header{
+header {
     position: fixed;
     width: 100%;
     top: 0;
@@ -29,27 +30,28 @@ header{
     justify-content: space-between;
 }
 
-#header i, p {
+#header i,
+p {
     gap: 10px;
-    display: flex; 
+    display: flex;
 }
 
-#header i{
-    margin-left: -65px;    
+#header i {
+    margin-left: -65px;
 }
 
-#header h3{
+#header h3 {
     margin-left: -900px;
     margin-bottom: 5px;
     color: #F8F6F6;
 }
 
-.log{
+.log {
     color: white;
     cursor: pointer;
 }
 
-#header{
+#header {
     max-width: 1100px;
     margin-left: 70px;
     gap: 10px;
@@ -64,7 +66,7 @@ header{
 
 /*Barra Lateral*/
 
- .barra-lateral{
+.barra-lateral {
     width: 50px;
     height: 100%;
     padding: 15px 0 15px;
@@ -77,12 +79,12 @@ header{
     box-shadow: 0px 62px 5px 0px rgba(0, 0, 0, 0.3) inset;
 }
 
-.barra-lateral.expandir{
+.barra-lateral.expandir {
     width: 200px;
     box-shadow: 0px 62px 5px 0px rgba(0, 0, 0, 0.3) inset;
 }
 
-.btn-expandir{
+.btn-expandir {
     margin-top: 10px;
     display: inline-block;
     justify-content: space-between;
@@ -90,7 +92,7 @@ header{
     padding-inline: 4px;
 }
 
-.btn-expandir > i{
+.btn-expandir>i {
     color: #F8F6F6;
     font-size: 15px;
     cursor: pointer;
@@ -98,25 +100,26 @@ header{
     margin-left: 3px;
 }
 
-ul{
+ul {
     height: 100%;
     list-style-type: none;
     margin-top: 40px;
 }
 
-ul li.item-menu{
+ul li.item-menu {
     transition: .2s;
 }
 
-ul li.ativo i, ul li.ativo .txt-link{
+ul li.ativo i,
+ul li.ativo .txt-link {
     color: #311878;
 }
 
-ul li.item-menu:hover{
+ul li.item-menu:hover {
     color: #311878;
 }
 
-ul li.item-menu a{
+ul li.item-menu a {
     color: #F8F6F6;
     text-decoration: none;
     font-size: 15px;
@@ -125,25 +128,25 @@ ul li.item-menu a{
     line-height: 40px;
 }
 
-ul li.item-menu a .txt-link{
+ul li.item-menu a .txt-link {
     margin-left: 22px;
     font-size: 12px;
 }
 
-ul li.item-menu a .icon > i{
+ul li.item-menu a .icon>i {
     margin-left: 15px;
 }
 
 /* Fim da barra lateral */
 
-#logimg{
+#logimg {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 25px;
 }
 
-.content{
+.content {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -155,7 +158,7 @@ ul li.item-menu a .icon > i{
     gap: 10px;
 }
 
-.content h2{
+.content h2 {
     margin-left: 240px;
 }
 
@@ -165,18 +168,21 @@ ul li.item-menu a .icon > i{
     align-items: center;
 }
 
-.front h3, .front1 h3{
+.front h3,
+.front1 h3 {
     text-align: center;
 }
 
-.front h4, .front1 h4{
+.front h4,
+.front1 h4 {
     margin-top: 25px;
     margin-left: 5px;
     text-align: justify;
     font-size: var(--font-h4);
 }
 
-.back, .back1{
+.back,
+.back1 {
     background: #8767E0;
     border: #8767E0;
     padding-left: 20px;
@@ -188,34 +194,36 @@ ul li.item-menu a .icon > i{
     width: 200px;
 }
 
-.front, .front1{
+.front,
+.front1 {
     position: relative;
     background: #311878;
     border-radius: 20px;
     color: var(--text-color);
     position: relative;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-.front i, .front1 i{
+.front i,
+.front1 i {
     display: flex;
     justify-content: center;
     padding-top: 65px;
     font-size: 70px;
     cursor: pointer;
-  }
+}
 
-  .turmas-title{
+.turmas-title {
     color: var(--primary-color);
-    margin-left: 300px;
+    margin-left: 250px;
     justify-content: center;
     margin-top: 30px;
 }
 
-.search-box{
+.search-box {
     padding-left: 400px;
     margin-top: 70px;
 }
@@ -227,7 +235,7 @@ ul li.item-menu a .icon > i{
     gap: 20px;
 }
 
-.txtBusca{
+.txtBusca {
     width: 550px;
 }
 
@@ -239,32 +247,34 @@ ul li.item-menu a .icon > i{
     font-size: 18px;
 }
 
-.borda{
+.borda {
     border: 1px solid white;
 }
 
-.magnifying{
+.magnifying {
     background: var(--main-color);
     width: 50px;
     border-radius: 10px;
     cursor: pointer;
 }
 
-#magnifying{
+#magnifying {
     margin-top: 15px;
     margin-left: 15px;
     color: white;
 }
 
-#magnifying:hover{
+#magnifying:hover {
     color: var(--primary-color);
 }
 
-.quadradu, .quadradu1{
+.quadradu,
+.quadradu1 {
     margin-left: auto;
 }
 
-.box, .box-mais{
+.box,
+.box-mais {
     justify-content: center;
     flex-direction: column;
     border: 2px solid #8767E0;
@@ -276,7 +286,7 @@ ul li.item-menu a .icon > i{
 }
 
 .box-mais:hover,
-.box:hover{
+.box:hover {
     justify-content: center;
     flex-direction: column;
     border: 2px solid #311878;
@@ -288,32 +298,33 @@ ul li.item-menu a .icon > i{
     cursor: pointer;
 }
 
-.quadradu:hover .nome h4, .quadradu:hover .nome h5{
-    color: white;    
+.quadradu:hover .nome h4,
+.quadradu:hover .nome h5 {
+    color: white;
 }
 
-.nome{
+.nome {
     display: flex;
 }
 
-.box h5{
+.box h5 {
     margin-left: 15PX;
 }
 
-.nome h4{
+.nome h4 {
     margin-top: 7px;
     margin-left: 15px;
     color: #311878;
 }
 
-.nome h5{
+.nome h5 {
     position: absolute;
     margin-top: 10px;
     color: #311878;
     margin-left: 800px;
 }
 
-.box-mais h5{
+.box-mais h5 {
     margin-left: 400px;
 }
 
@@ -361,7 +372,7 @@ ul li.item-menu a .icon > i{
         padding: 10px;
         text-align: center;
     }
-    
+
     .front i,
     .front1 i {
         padding-top: 20px;
@@ -378,6 +389,7 @@ ul li.item-menu a .icon > i{
 
 
 @media only screen and (max-width: 1367px) and (max-width: 1920px) {
+
     .quadradu,
     .quadradu1 {
         margin-left: 300px;
@@ -387,30 +399,30 @@ ul li.item-menu a .icon > i{
 }
 
 @media only screen and (min-width: 1365px) {
+
     .quadradu,
     .quadradu1 {
-        margin-left: 150px; 
+        margin-left: 150px;
         display: flex;
         align-items: center;
     }
 }
-                 
+
 @media only screen and (max-width: 1367px) and (max-width: 1920px) {
-    .tiltu{
+    .tiltu {
         margin-left: 50px;
         width: 100px;
     }
 
-    #header{
+    #header {
         width: 1161px;
     }
-    
+
 }
 
 @media only screen and (min-width: 1366px) {
-    .tiltu{
+    .tiltu {
         margin-left: -30px;
     }
-    
-}
 
+}
