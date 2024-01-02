@@ -1,174 +1,12 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Roboto Mono', monospace;
-}
+@import '../css/header.css';
+@import '../css/sidebard.css';
 
-:root {
---bg-color: #F8F6F6;
---text-color: white;
---main-color: #8767E0;
---primary-color: #311878;
---second-color: rgba(135, 103, 224);
---font-h4: 22px;
-}
-
-body{
-background: var(--bg-color);
-height: 100vh;
-}
-/*Inicio Header*/
-header{
-position: fixed;
-width: 100%;
-top: 0;
-right: 0;
-z-index: 10;
-background: var(--second-color);
-}
-
-#header i, p {
-display: flex;
-justify-content: center;
-gap: 10px;
-align-items: center;
-
-}
-
-.title{
-display: flex;
-margin-left: -100px;
-gap: 25px;
-color: white;
-}
-
-.log{
-color: white;
-}
-
-#header{
-max-width: 1100px;
-margin: 0 auto;
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding: 10px;
-}
-#logimg{
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: 25px;
-}
-/*Fim Header*/
-
-/*Inicio SideBar*/
-.central{
-max-width: 1110px;
-margin-left: -50px;
-}
-
-.barra{
-position: fixed;
-}
-
-.barra-lateral{
-padding-top: 10px;
-width: 224px;
-height: 100vh;
-position: fixed;
-background: var(--second-color);
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-}
-
-.navbar li{
-list-style: none;
-padding-top: 10px;
-padding-bottom: 10px;
-display: inline-block;
-padding-left: 10px;
-}
-
-a{
-text-decoration: none;
-color: var(--text-color);
-}
-
-a:hover{
-color: #311878;
-}
-
-.navbar li a{
-height: 100vh;
-width: 100vh;
-align-items: center;
-justify-content: center;
-}
-
-.ajuda{
-position: fixed;
-bottom: 0;
-}
-
-/*Fim SideBar*/
-section {
-position: absolute;
-z-index: 2;
-top: 50px;
-left: 50px;
-margin-left: 200px;
-}  
-
-.barra{
-  width: 240px;
-  height: 905px;
-  padding-top: 50px;
-  margin-left: 700px;
-}
-
-.barra-direita{
-  padding-top: 10px;
-  width: 400px;
-  height: 905px;
-  margin-left: 50px;
-  background-color: #8767E0;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-}
-
-.analise{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-left: -95px;
-}
-
-.reco{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-left: -95px;
-}
-
-.alunos{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-left: -95px;
-}
-
-.form h5{
-  color: #311878;
-}
-
-.forms h2{
-  margin-top: 40px;
-  margin-bottom: 30px;
-  color: #311878;
-}
-
-.form:hover .text h5{
-  color: #F8F6F6;
+.forms {
+  position: absolute;
+  z-index: 2;
+  top: 80px;
+  left: 50px;
+  margin-left: 200px;
 }
 
 .form{
@@ -194,64 +32,87 @@ margin-left: 200px;
   background-color: #8767E0;
   cursor: pointer;
 }
-
-.tilt{
-  font-size: 20px;
-  text-align: center;
+.form h5{
+  color: #311878;
 }
 
-.hr{
+.form h2{
+  margin-top: 40px;
+  margin-bottom: 30px;
+  color: #311878;
+}
+
+.form:hover .text h5{
+  color: #F8F6F6;
+}
+
+.analise {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: -95px;
+}
+
+.reco {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: -95px;
+}
+
+.alunos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: -95px;
+}
+
+.hr {
   height: 3px;
   background: black;
   width: 80%;
   margin-left: 40px;
 }
 
-.nome-aluno{
+.nome-aluno {
   font-size: 10px;
   margin-top: 10px;
   margin-left: 60px;
 }
 
-.desen{
+.desen {
   font-size: 10px;
   margin-top: 20px;
   margin-left: 90px;
 }
 
-.perce{
+.perce {
   background: var(--primary-color);
   border-radius: 25px;
   width: 300px;
-  height: 70px;
+  height: 50px;
   margin-top: 10px;
   margin-left: -40px;
 }
 
-.perce h2{
+.perce h2 {
   padding-top: 1px;
   margin-left: 112px;
-  font-size: 50px;
+  font-size: 30px;
   color: white;
+  text-align: center;
+  justify-content: center;
 }
-.resp{
+
+.resp {
   display: flex;
-  gap: 80px;
-  margin-left: 17px;
-  font-size: 15px;
-  margin-top: 10px;
+  align-items: center ;
 }
 
-.err h1{
-  margin-left: 19px;
-}
-
-.arc h1{
-  margin-left: 35px;
-}
-
-.err{
-  margin-left: 60px;
+.arc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hr1 {
@@ -259,33 +120,33 @@ margin-left: 200px;
   background: black;
 }
 
-.expl{
+.expl {
   margin-left: 15px;
   margin-top: 15px;
   font-size: 15px;
 }
 
-.suges h1{
+.suges h1 {
   margin-left: 15px;
   margin-top: 10px;
   color: var(--bg-color);
   font-size: 13px;
 }
 
-.expl1{
+.expl1 {
   margin-left: 15px;
   margin-top: 15px;
   font-size: 20px;
 }
 
-.list-aluno{
+.list-aluno {
   height: 300px;
   margin-left: 18px;
   width: 300px;
   overflow-y: auto;
 }
 
-.list-aluno select{
+.list-aluno select {
   background-color: var(--main-color);
   color: white;
   border-radius: 10px;
@@ -295,24 +156,93 @@ margin-left: 200px;
   text-align: center;
 }
 
+.config {
+  width: 400px;
+  height: 0px;
+  margin-left: 1000px;
+  background-color: var(--second-color);
+  position: fixed;
+  transition: .2s;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3) inset;
+}
+
+.config.expandir {
+  margin-top: 60px;
+  margin-left: 930px;
+  background-color: var(--second-color);
+  position: fixed;
+  width: 400px;
+  height: 1000px;
+}
+
+.config h2 {
+  margin-top: 20px;
+  margin-right: 5px;
+  color: #fff;
+  display: flex;
+  margin-left: 20px;
+}
+
+.btn-expandi {
+  margin-left: 1280px;
+  margin-top: 70px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--second-color);
+  position: fixed;
+  z-index: 10;
+  border-radius: 10px;
+}
+
+.btn-expandi h2 {
+  text-align: center;
+}
+
+.btn-expandi i {
+  cursor: pointer;
+  color: white;
+}
+
+.itens {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  gap: 5px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 /* Media query para resoluções até 1366px (por exemplo, monitores de computador) */
 @media only screen and (max-width: 1366px) {
   .barra {
-      padding-left: 220px;
+    padding-left: 220px;
   }
 }
 
 /* Media query para resoluções entre 1367px e 1920px (por exemplo, monitores de computador maiores) */
 @media only screen and (min-width: 1367px) and (max-width: 1920px) {
   .barra {
-      padding-left: 140px;
+    padding-left: 140px;
   }
 }
 
 /* Media query para resoluções de TV (por exemplo, 1921px em diante) */
 @media only screen and (min-width: 1921px) {
   .barra {
-      /* Aplique estilos específicos para a resolução da TV aqui */
-      padding-left: 80px; /* Substitua pelo valor desejado */
+    /* Aplique estilos específicos para a resolução da TV aqui */
+    padding-left: 80px;
+    /* Substitua pelo valor desejado */
   }
 }

@@ -26,21 +26,22 @@ header{
     right: 0;
     z-index: 10;
     background: var(--second-color);
+    justify-content: space-between;
 }
 
 #header i, p {
-    display: flex;
-    justify-content: center;
     gap: 10px;
-    align-items: center;
-    
+    display: flex; 
 }
 
-.title{
-    display: flex;
-    margin-left: -100px;
-    gap: 25px;
-    color: white;
+#header i{
+    margin-left: -65px;    
+}
+
+#header h3{
+    margin-left: -900px;
+    margin-bottom: 5px;
+    color: #F8F6F6;
 }
 
 .log{
@@ -50,61 +51,90 @@ header{
 
 #header{
     max-width: 1100px;
-    margin: 0 auto;
+    margin-left: 70px;
+    gap: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
 }
 
-section{
-    max-width: 1110px;
-    padding-top: 50px;
+
+/*Fim do header*/
+
+/*Barra Lateral*/
+
+ .barra-lateral{
+    width: 50px;
+    height: 100%;
+    padding: 15px 0 15px;
+    background-color: #8767E0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .2s;
+    box-shadow: 0px 62px 5px 0px rgba(0, 0, 0, 0.3) inset;
+}
+
+.barra-lateral.expandir{
+    width: 200px;
+    box-shadow: 0px 62px 5px 0px rgba(0, 0, 0, 0.3) inset;
 }
 
 .btn-expandir{
-    
-}
-
-.barra-lateral{
-    padding-top: 10px;
-    width: 224px;
-    height: 895px;
-    position: fixed;
-    background: var(--second-color);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-}
-
-.navbar li{
-    list-style: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin-top: 10px;
     display: inline-block;
-    padding-left: 10px;
+    justify-content: space-between;
+    color: #F8F6F6;
+    padding-inline: 4px;
 }
 
-a{
-    text-decoration: none;
-    color: var(--text-color);
+.btn-expandir > i{
+    color: #F8F6F6;
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    margin-left: 3px;
 }
 
-a:hover{
+ul{
+    height: 100%;
+    list-style-type: none;
+    margin-top: 40px;
+}
+
+ul li.item-menu{
+    transition: .2s;
+}
+
+ul li.ativo i, ul li.ativo .txt-link{
     color: #311878;
 }
 
-.navbar li a{
-    height: 100vh;
-    width: 100vh;
-    align-items: center;
-    justify-content: center;
+ul li.item-menu:hover{
+    color: #311878;
 }
 
-
-
-.ajuda{
-    position: fixed;
-    bottom: 0;
+ul li.item-menu a{
+    color: #F8F6F6;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px 4%;
+    display: flex;
+    line-height: 40px;
 }
+
+ul li.item-menu a .txt-link{
+    margin-left: 22px;
+    font-size: 12px;
+}
+
+ul li.item-menu a .icon > i{
+    margin-left: 15px;
+}
+
+/* Fim da barra lateral */
 
 #logimg{
     display: flex;
@@ -187,7 +217,7 @@ a:hover{
 
 .search-box{
     padding-left: 400px;
-    margin-top: 30px;
+    margin-top: 70px;
 }
 
 .divBusca {
@@ -231,7 +261,7 @@ a:hover{
 }
 
 .quadradu, .quadradu1{
-    margin-left: 400px;
+    margin-left: auto;
 }
 
 .box, .box-mais{
@@ -240,8 +270,8 @@ a:hover{
     border: 2px solid #8767E0;
     border-radius: 10px;
     height: 40px;
-    width: 1100px;
-    margin-left: -115px;
+    width: 1000px;
+    margin-right: 200px;
     cursor: pointer;
 }
 
@@ -252,8 +282,8 @@ a:hover{
     border: 2px solid #311878;
     border-radius: 10px;
     height: 40px;
-    width: 1100px;
-    margin-left: -115px;
+    width: 1000px;
+    margin-right: 200px;
     background-color: #8767E0;
     cursor: pointer;
 }
@@ -345,3 +375,42 @@ a:hover{
     }
 
 }
+
+
+@media only screen and (max-width: 1367px) and (max-width: 1920px) {
+    .quadradu,
+    .quadradu1 {
+        margin-left: 300px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 1365px) {
+    .quadradu,
+    .quadradu1 {
+        margin-left: 150px; 
+        display: flex;
+        align-items: center;
+    }
+}
+                 
+@media only screen and (max-width: 1367px) and (max-width: 1920px) {
+    .tiltu{
+        margin-left: 50px;
+        width: 100px;
+    }
+
+    #header{
+        width: 1161px;
+    }
+    
+}
+
+@media only screen and (min-width: 1366px) {
+    .tiltu{
+        margin-left: -30px;
+    }
+    
+}
+

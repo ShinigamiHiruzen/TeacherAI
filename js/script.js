@@ -1,25 +1,80 @@
-function criarElemento() {
+var menuItem = document.querySelectorAll('.item-menu')
 
-  var quadradu = document.createElement("div");
-  quadradu.className = "quadradu";
+function selectLink(){
+  menuItem.forEach((item)=>
+    item.classList.remove('ativo')
+  )
+  this.classList.add('ativo')
+}
 
-  var box = document.createElement("div");
-  box.className = "box";
+menuItem.forEach((item)=>
+  item.addEventListener('click', selectLink)
+)
 
-  var nome = document.createElement("div");
-  nome.className = "nome";
+var btnExp = document.querySelector('#btn-exp')
+var menuSide = document.querySelector('.barra-lateral')
 
-  var h4 = document.createElement("h4");
-  h4.textContent = "Banco de Dados";
+btnExp.addEventListener('click', function(){
+  menuSide.classList.toggle('expandir')
+})
 
-  var h5 = document.createElement("h5");
-  h5.textContent = "82676";
+document.getElementById('editableDiv').addEventListener('keydown', function (event) {
+  // Impede a tecla Enter de funcionar
+  if (event.key === 'Enter') {
+    event.preventDefault();
+    // Desativa a edição de conteúdo após pressionar Enter
+    document.getElementById('editableDiv').setAttribute('contenteditable', 'false');
+    document.getElementById('editableH4').setAttribute('contenteditable', 'false');
+    document.getElementById('editableH5').setAttribute('contenteditable', 'false');
+  }
+});
 
-  nome.appendChild(h4);
-  nome.appendChild(h5);
+function createEditableDiv() {
+    var contentDiv = document.getElementById("content");
+  
+    // Criação do elemento div com a classe quadradu1
+    var newDiv = document.createElement("div");
+    newDiv.className = "quadradu1";
+  
+    // Criação do elemento div com a classe box
+    var boxDiv = document.createElement("div");
+    boxDiv.className = "box";
+  
+    // Criação do elemento div com a classe nome
+    var nomeDiv = document.createElement("div");
+    nomeDiv.className = "nome";
+  
+    // Criação do elemento h4 com conteúdo editável e placeholder
+    var h4Element = document.createElement("h4");
+    h4Element.contentEditable = true;
+    h4Element.innerText = "Digite o nome da disciplina";
 
-  box.appendChild(nome);
-  quadradu.appendChild(box);
+  
+    // Criação do elemento h5 com conteúdo editável e placeholder
+    var h5Element = document.createElement("h5");
+    h5Element.contentEditable = true;
+    h5Element.innerText = "Nome";
+  
+    // Adiciona os elementos à estrutura HTML
+    nomeDiv.appendChild(h4Element);
+    nomeDiv.appendChild(h5Element);
+    boxDiv.appendChild(nomeDiv);
+    newDiv.appendChild(boxDiv);
+    contentDiv.insertBefore(newDiv, document.querySelector('.box-mais').parentNode);
+  }
+  
+  function handleEnterKeyPress(element) {
+    // Adiciona a lógica para criar a nova classe quando a tecla Enter for pressionada
+    if (event.key === "Enter") {
+      event.preventDefault();
+      createEditableDiv();
+    }
+  }
 
-  document.body.appendChild(quadradu1);
+function handleEnterKeyPress(element) {
+  // Adiciona a lógica para criar a nova classe quando a tecla Enter for pressionada
+  if (event.key === "Enter") {
+      event.preventDefault();
+      createEditableDiv();
+  }
 }

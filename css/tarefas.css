@@ -1,120 +1,129 @@
 @import './header.css';
 @import './sidebard.css';
 
-.content{
-    display: flex;
-    gap: 10px;
+.content {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 30px;
 }
 
-
-
-.tarefas{
-    margin-left: 300px;
-    margin-top: 20px;
+.tarefas {
+  margin-left: 240px;
+  margin-top:80px;
 }
+
 .tarefa {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-.front1{
-    position: relative;
-    border: 2px solid #8767E0;
-    border-radius: 20px;
-    color: var(--text-color);
-    position: relative;
-      width: 150px;
-      height: 100px;
-      display: flex;
-      flex-direction: column;
-      font-size: 10px;
+.front1 {
+  position: relative;
+  border: 2px solid #8767E0;
+  border-radius: 20px;
+  color: var(--text-color);
+  position: relative;
+  width: 150px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
 }
 
-.front1:hover{
+.front1:hover {
   border: 2px solid #311878;
   background-color: #8767E0;
   cursor: pointer;
 }
 
-.front1:hover h1, .front1:hover i, .front1:hover h2{
+.front1:hover h1,
+.front1:hover i,
+.front1:hover h2 {
   color: white;
 }
 
-.front1 h2{
+.front1 h2 {
   color: #311878;
   font-size: 15px;
 }
-.front1 h1{
+
+.front1 h1 {
   color: #311878;
   font-size: 15px;
   margin-top: -5px;
 }
 
-.front i, .front1 i{
-    display: flex;
-    justify-content: center;
-    font-size: 10px;
-    cursor: pointer;
-  }
-
-  .front1 a{
-    color: white;
-    text-decoration: none;
-    font-size: 10px;
-  }
-
-
-
-  .linha{
-    height: 2px;
-    background-color: black;
-    width:1001.6px;
-    margin-left: 223px;
-    margin-top: 10px;
-  }
-
-  .titulo1{
-    margin-top: 20px;
-    margin-bottom: 15px;
-    margin-left: 300px;
-    color: #311878;
-  }
-
-  .tarefas1{
-    margin-left: 300px;
-    display: flex;
-    gap: 10px;
+.front i,
+.front1 i {
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+  cursor: pointer;
 }
 
-.tarefas-title{
-  margin-left: 17px;
+.front1 a {
+  color: white;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+.linha {
+  height: 2px;
+  background-color: black;
+  width: 1001.6px;
+  margin-left: 223px;
+  margin-top: 10px;
+  background: var(--main-color);
+}
+
+.titulo{
+  margin-bottom: 20px;
+  color: #311878;
+}
+
+.titulo1 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  margin-left: 240px;
+  color: #311878;
+}
+
+.tarefas1 {
+  margin-left: 240px;
+  display: flex;
+  gap: 40px;
+}
+
+.tarefas-title {
+  margin-left: 35px;
   padding-top: 35px;
   font-size: 10px;
-  
+
 }
 
-.tarefas-title1{
-  margin-left: 12px;
-  padding-top: 40px;
+.tarefas-title1 {
+  margin-left: 20px;
+  padding-top: 45px;
   font-size: 10px;
 }
 
-.tarefas-turma{
+.tarefas-turma {
   margin-left: 17px;
   padding-top: 15px;
   font-size: 10px;
   margin-bottom: 10px;
 }
 
-.icon{
+.icon-a{
   font-size: 40px;
   margin-top: 20px;
   cursor: pointer;
+  margin-left: 40px;
+  color: #311878;
 }
 
-.tarefas-turma1{
+.tarefas-turma1 {
   padding-top: 10px;
   margin-left: 13px;
   font-size: 10px;

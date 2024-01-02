@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 include_once "./login/bd/connect.php";
 
@@ -19,8 +18,9 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
 
             $_SESSION['id'] = $usuario['id'];
             $_SESSION['username'] = $usuario['username'];
+            session_start();
 
-            header("Location: ../home/index.html");
+            header("Location: ../home/index.php");
         } else {
             // Mensagem de erro se as credenciais forem inválidas.
             echo "Nome de usuário ou senha incorretos.";

@@ -21,82 +21,80 @@
 
         <header>
             <div id="header">
-
-                <div class="title">
+    
+                <div class="btn-expandir" id="btn-exp">
                     <i class="fa-solid fa-bars"></i>
-                    <h2>Teacher's AI Support</h2>
-                </div>
-
-                <div class="divBusca">
-                    <input type="text" class="txtBusca"
-                        placeholder="Buscar..." />
-                    <div class="magnifying">
-                        <i class="fa-solid fa-magnifying-glass"
-                            id="magnifying"></i>
-                    </div>
-                </div>
-
+                </div>    
+    
+                <h3>Teacher's AI Support</h3>
+                
                 <div class="log">
-                    <p><i class="fa-solid fa-user"></i><a>Login</a> </p>
+                    <p><i class="fa-solid fa-user"></i><a href="../login.php"> Logout</a></p>
                 </div>
-
             </div>
         </header>
-
-        <section class="central">
-
-            <div class="barra-lateral">
-                <ul class="navbar">
-
-                    <li>
-                        <a href="../home/index.html"><i
-                                class="fa-solid fa-house"></i> Home</a>
+            
+        <nav class="barra-lateral">
+                
+                <ul>
+                    <li class="item-menu ativo">
+                        <a href="../home/index.html">
+                            <span class="icon"><i class="fa-solid fa-house"></i></span>
+                            <span class="txt-link">Home</span>
+                        </a>
                     </li>
                     <hr>
-                    <li>
-                        <a href="../utilidades/favoritos.html"> <i
-                                class="fa-solid fa-bookmark"></i> Favoritos</a>
+                    <li class="item-menu"> 
+                        <a href="../utilidades/favoritos.html">
+                            <span class="icon"><i class="fa-solid fa-bookmark"></i></span>
+                            <span class="txt-link">Favoritos</span>
+                        </a>
                     </li>
                     <hr>
-                    <li>
-                        <a href="../utilidades/calendario.html"><i
-                                class="fa-solid fa-calendar-days"></i>
-                            Calendário</a>
+                    <li class="item-menu">
+                        <a href="../utilidades/calendario.html">
+                            <span class="icon"><i class="fa-solid fa-calendar-days"></i></span>
+                            <span class="txt-link">Calendário</span>
+                        </a>
                     </li>
                     <hr>
-                    <li>
-                        <a href="../tarefas/tarefas.html"><i
-                                class="fa-solid fa-clipboard-list"></i>
-                            Tarefas</a>
+                    <li class="item-menu">
+                        <a href="../tarefas/tarefas.html">
+                            <span class="icon"><i class="fa-solid fa-clipboard-list"></i></span>
+                            <span class="txt-link">Tarefas</span>
+                        </a>
                     </li>
                     <hr>
-                    <li>
-                        <a href="../suporte/acessibilidade.html"><i
-                                class="fa-solid fa-universal-access"></i>
-                            Acessibilidade</a>
+                    <li class="item-menu">
+                        <a href="../suporte/acessibilidade.html">
+                            <span class="icon"><i class="fa-solid fa-universal-access"></i></span>
+                            <span class="txt-link">Acessibilidade</span>
+                        </a>
                     </li>
                     <hr>
-                    <li>
-                        <a href="../tarefas/desempenho.html"><i
-                                class="fa-solid fa-chart-simple"></i>
-                            Desempenho</a>
+                    <li class="item-menu">
+                        <a href="../tarefas/desempenho.html">
+                            <span class="icon"><i class="fa-solid fa-chart-simple"></i></span>
+                            <span class="txt-link">Desempenho</span>
+                        </a>
                     </li>
                     <hr>
-                    <li>
-                        <a href="../suporte/configuracoes.html"><i
-                                class="fa-solid fa-gear"></i> Configurações</a>
+                    <li class="item-menu">
+                        <a href="../suporte/configuracoes.html">
+                            <span class="icon"><i class="fa-solid fa-gear"></i></span>
+                            <span class="txt-link">Configurações</span>
+                        </a>
                     </li>
                     <hr>
-                    <li class="ajuda">
-                        <a href="../suporte/ajuda.html"><i
-                                class="fa-solid fa-circle-info"></i> Precisa de
-                            ajuda?</a>
+                    <li class="item-menu">
+                        <a href="../suporte/ajuda.html">
+                        <span class="icon"><i class="fa-solid fa-circle-info"></i></span>
+                        <span class="txt-link">Ajuda</span>
+                        </a>
                     </li>
                 </ul>
-
-            </div>
-
-        </section>
+                    
+        </nav>
 
         <section class="content">
 
@@ -152,6 +150,8 @@
                     style='width: 1000px; height: 500px;'></zapier-interfaces-page-embed>
             </div>
         </section>
+        
+        <script src="../js/sidebar.js"></script>
 
     </body>
 </html>

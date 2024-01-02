@@ -74,6 +74,8 @@ function Turma(nome) {
   this.nome = nome;
 }
 
+
+
 var turma1 = new Turma("Turma A");
 var turma2 = new Turma("Turma B");
 var turma3 = new Turma("Turma C");
@@ -88,7 +90,7 @@ var listaDeTurmas = [turma1, turma2, turma3, turma4, turma5, turma6, turma7, tur
 var divListaTurmas = document.getElementById("listaTurmas");
 
 for (var i = 0; i < listaDeTurmas.length; i++) {
-  var turmaDiv = document.createElement("div");
+  var turmaDiv = document.createElement("option");
 
   var checkbox = document.createElement("input");
   checkbox.type = "checkbox";
@@ -96,11 +98,16 @@ for (var i = 0; i < listaDeTurmas.length; i++) {
   checkbox.value = listaDeTurmas[i].nome;
   turmaDiv.appendChild(checkbox);
 
-  turmaDiv.innerHTML += "<strong>Turma:</strong> " + listaDeTurmas[i].nome +
-      "<br>----------------------";
+  turmaDiv.innerHTML += listaDeTurmas[i].nome;
 
   divListaTurmas.appendChild(turmaDiv);
 }
+
+
+
+
+
+
 
   var contadorOpcoes = 3; 
         
@@ -137,4 +144,26 @@ for (var i = 0; i < listaDeTurmas.length; i++) {
     }
     }
 
+/*Sidebar - Configurações*/
 
+var menuItem = document.querySelectorAll('.item')
+
+function selectLink(){
+  menuIten.forEach((item)=>
+    item.classList.remove('ativo')
+  )
+  this.classList.add('ativo')
+}
+
+menuItem.forEach((item)=>
+  item.addEventListener('click', selectLink)
+)
+
+var btnExpd = document.querySelector('#btn-expd')
+var menuSid = document.querySelector('.config')
+
+btnExpd.addEventListener('click', function(){
+  menuSid.classList.toggle('expandir')
+})
+
+/*Sidebar - Configurações*/
