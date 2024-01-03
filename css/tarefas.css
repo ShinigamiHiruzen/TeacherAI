@@ -128,3 +128,27 @@
   margin-left: 13px;
   font-size: 10px;
 }
+
+body.dark-mode {
+  background-color: #1c1c1c;
+  color: white;
+}
+
+.barra-lateral.dark-mode {
+  background-color: #311878;
+}
+
+header.dark-mode {
+  background-color: #311878;
+  color: white;
+}
+
+body.dark-mode .content h1,
+body.dark-mode .content i,
+body.dark-mode .titulo1,
+body.dark-mode .tarefas1 h2,
+body.dark-mode .tarefas1 h1,
+body.dark-mode .tarefas1 i
+{
+  color: white;
+}

@@ -114,39 +114,39 @@
             <div class="buttons">
 
                 <div class="onoff">
-                    <input type="checkbox" class="toggle" id="onoff1">
-                    <label for="onoff1"></label>
+                    <input type="checkbox" class="toggle" id="onoff6">
+                    <label for="onoff6"></label>
                     <h5>Ativar Comandos de Voz</h5>
                 </div>
 
                 <div class="onoff">
-                    <input type="checkbox" class="toggle" id="onoff2">
-                    <label for="onoff2"></label>
+                    <input type="checkbox" class="toggle" id="onoff7">
+                    <label for="onoff7"></label>
                     <h5>Leitura de Tela</h5>
                 </div>
 
                 <div class="onoff">
-                    <input type="checkbox" class="toggle" id="onoff3">
-                    <label for="onoff3"></label>
+                    <input type="checkbox" class="toggle" id="onoff8">
+                    <label for="onoff8"></label>
                     <h5>Tradução para Língua de Sinais</h5>
                 </div>
 
                 <div class="onoff">
-                    <input type="checkbox" class="toggle" id="onoff4">
-                    <label for="onoff4"></label>
+                    <input type="checkbox" class="toggle" id="onoff9">
+                    <label for="onoff9"></label>
                     <h5>Aumentar Tamanho da Letra</h5>
                 </div>
 
                 <div class="onoff">
-                    <input type="checkbox" class="toggle" id="onoff5">
-                    <label for="onoff5"></label>
+                    <input type="checkbox" class="toggle" id="onoff10">
+                    <label for="onoff10"></label>
                     <h5>Ativar recomendação de suporte para Transtorno do
                         Espectro Autista (TEA)</h5>
                 </div>
 
                 <div class="onoff">
-                    <input type="checkbox" class="toggle" id="onoff6">
-                    <label for="onoff6"></label>
+                    <input type="checkbox" class="toggle" id="onoff11">
+                    <label for="onoff11"></label>
                     <h5>Ativar recomendação de suporte para Transtorno de Défcit
                         de Atenção com Hiperatividade (TDAH)</h5>
                 </div>
@@ -161,6 +161,24 @@
                     style='width: 1000px; height: 500px;'></zapier-interfaces-page-embed>
             </div>
         </section>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var darkModeToggle = document.getElementById('onoff1');
+                var body = document.body;
+        
+                // Verifique se o modo escuro está ativado no armazenamento local
+                var isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+                body.classList.toggle('dark-mode', isDarkMode);
+                darkModeToggle.checked = isDarkMode;
+        
+                darkModeToggle.addEventListener('change', function () {
+                    // Atualize o armazenamento local quando o modo escuro for alterado
+                    localStorage.setItem('darkMode', darkModeToggle.checked ? 'enabled' : 'disabled');
+                    body.classList.toggle('dark-mode', darkModeToggle.checked);
+                });
+            });
+        </script>
         
         <script src="../js/sidebar.js"></script>
 

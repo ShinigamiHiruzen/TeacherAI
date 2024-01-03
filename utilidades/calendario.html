@@ -197,8 +197,25 @@
             <input type="text" name="" id="" placeholder="Digite uma mensagem">
             <i class="fa-solid fa-arrow-right"></i>
         </div>
-
-        </div>    
+        </div>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var darkModeToggle = document.getElementById('onoff1');
+                var body = document.body;
+        
+                // Verifique se o modo escuro está ativado no armazenamento local
+                var isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+                body.classList.toggle('dark-mode', isDarkMode);
+                darkModeToggle.checked = isDarkMode;
+        
+                darkModeToggle.addEventListener('change', function () {
+                    // Atualize o armazenamento local quando o modo escuro for alterado
+                    localStorage.setItem('darkMode', darkModeToggle.checked ? 'enabled' : 'disabled');
+                    body.classList.toggle('dark-mode', darkModeToggle.checked);
+                });
+            });
+        </script>
 
             <script src="../js/sidebar.js"></script>
             <script src="../js/calendario.js"></script>

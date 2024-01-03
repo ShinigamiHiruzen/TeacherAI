@@ -96,16 +96,16 @@
                     
             </nav>
 
-            <div vw class="enabled">
+            <div vw class="disable" id="vlibras">
                 <div vw-access-button class="active"></div>
                 <div vw-plugin-wrapper>
-                  <div class="vw-plugin-top-wrapper"></div>
+                    <div class="vw-plugin-top-wrapper"></div>
                 </div>
-              </div>
-              <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-              <script>
+            </div>
+            <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+            <script>
                 new window.VLibras.Widget('https://vlibras.gov.br/app');
-              </script>
+            </script>
 
         <section class="config">
 
@@ -137,9 +137,9 @@
                 </div>
 
                 <div class="onoff">
-                    <input type="checkbox" class="toggle" id="onoff2">
+                    <input type="checkbox" class="toggle" id="onoff2" onchange="toggleVLibras()">
                     <label for="onoff2"></label>
-                    <h5>Permitir notificações por email</h5>
+                    <h5>Ativar tradução para libras</h5>
                 </div>
 
                 <div class="onoff">
@@ -170,8 +170,9 @@
 
         </section>
 
+        
+
         <script src="../js/config.js"></script>
         <script src="../js/sidebar.js"></script>
-
     </body>
 </html>

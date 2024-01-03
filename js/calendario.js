@@ -1,5 +1,4 @@
-
-
+document.addEventListener('DOMContentLoaded', function(){ 
 const date = new Date();
 
 const renderCalendar = () => {
@@ -82,3 +81,15 @@ document.querySelector(".next").addEventListener("click", () => {
 });
 
 renderCalendar();
+
+});
+
+const script = document.createElement('script');
+script.src = './config.js'; // Substitua pelo caminho correto do seu script
+document.head.appendChild(script);
+
+// Adiar a chamada da função toggleVLibras para garantir que o script seja carregado
+script.onload = function () {
+  const isVLibrasAtivado = window.isVLibrasAtivado;
+  isVLibrasAtivado();
+};

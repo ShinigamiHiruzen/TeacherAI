@@ -341,3 +341,23 @@
 .org-eventos{
    margin-top: -200px;
 }
+
+body.dark-mode {
+    background-color: #1c1c1c;
+    color: white;
+}
+
+.barra-lateral.dark-mode {
+    background-color: #311878;
+}
+
+header.dark-mode {
+    background-color: #311878;
+    color: white;
+}
+
+body.dark-mode h1,
+body.dark-mode h5,
+body.dark-mode i {
+    color: white;
+}

@@ -19,15 +19,13 @@ $arquivo = "
 
 ";
 
-$destino = "felipe.s.melo@ba.estudante.senai.br";
+$destino = "eduardoandradebomfimjr@gmail.com";
 $assunto = "Contato pelo Site";
 
-$headers  = "MIME-Version: 1.0\n";
-$headers .= "Content-type: text/html; charset=iso-8859-1\n";
-$headers .= "From: $nome <$email>";
+$Headers      = "MIME-Version: 1.1\n";
+$Headers     .= "Content-type: text/html; charset=utf-8\n";
+$Headers     .= "Reply-to: $email\n";
 
 //Enviar
 mail($destino, $assunto, $arquivo, $headers);
-
-echo "<meta http-equiv='refresh' content='10;URL=../formulario.php'>";
 ?>

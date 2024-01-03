@@ -269,3 +269,21 @@ li {
     /* Substitua pelo valor desejado */
   }
 }
+
+body.dark-mode {
+  background-color: #1c1c1c;
+  color: white;
+}
+
+.barra-lateral.dark-mode {
+  background-color: #311878;
+}
+
+header.dark-mode {
+  background-color: #311878;
+  color: white;
+}
+
+body.dark-mode .centro h2{
+  color: white;
+}

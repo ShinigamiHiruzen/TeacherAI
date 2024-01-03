@@ -426,3 +426,24 @@ ul li.item-menu a .icon>i {
     }
 
 }
+
+body.dark-mode {
+    background-color: #1c1c1c;
+    color: white;
+}
+
+.barra-lateral.dark-mode {
+    background-color: #311878;
+}
+
+header.dark-mode {
+    background-color: #311878;
+    color: white;
+}
+
+body.dark-mode h2.turmas-title,
+body.dark-mode h4.nome h4,
+body.dark-mode h5,
+body.dark-mode h4{
+    color: white;
+}
